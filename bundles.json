@@ -2,21 +2,35 @@
     "manifest": [
         {
             "key": "Item_Containers/titancontainer.bundle",
-            "dependencyKeys": ["shaders","cubemaps","assets/commonassets/physics/physicsmaterials.bundle"]
+            "dependencyKeys": [
+                "shaders",
+                "cubemaps",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]
         },
         {
             "key": "Item_Containers/gearbox.bundle",
             "dependencyKeys": [
                 "shaders",
                 "cubemaps",
-                "assets/commonassets/physics/physicsmaterials.bundle"]
-         },
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
+            "key": "Item_Containers/outlanderbox.bundle",
+            "dependencyKeys": [
+                "shaders",
+                "cubemaps",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]    
+        },
         {
             "key": "Item_Statics/t_koin_currency.bundle",
             "dependencyKeys": [
                 "shaders",
                 "cubemaps",
-                "assets/commonassets/physics/physicsmaterials.bundle"]            
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]
         }
     ]
 }

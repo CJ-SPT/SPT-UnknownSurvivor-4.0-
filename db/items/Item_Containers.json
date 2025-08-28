@@ -16,7 +16,7 @@
         {
           "_id": "682bf0d154701ce47df6c1a8",
           "_name": "1",
-          "_parent": "682bf078537777d09b05573a",
+          "_parent": "682a2b9638afe9ae3cfdd943",
           "_props": {
             "cellsH": 4,
             "cellsV": 5,
@@ -36,7 +36,8 @@
             "maxCount": 0,
             "maxWeight": 0,
             "minCount": 0
-          }
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
         },
         {
           "_id": "682bf13b20ddbed8ee9ebb32",
@@ -51,7 +52,8 @@
                   "5448bf274bdc2dfc2f8b456a"
                 ],
                 "Filter": [
-                  "54009119af1c881c07000029"
+                  "54009119af1c881c07000029",
+                  "5448f3ac4bdc2dce718b4569"
                 ]
               }
             ],
@@ -59,7 +61,8 @@
             "maxCount": 0,
             "maxWeight": 0,
             "minCount": 0
-          }
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
         }
       ],
       "ExaminedByDefault": true,
@@ -111,16 +114,29 @@
         {
           "_name": "main",
           "_id": "688bc098768b31618c13df7c",
-          "_parent": "688bc088cc1b8a4b8a1a61a3",
+          "_parent": "688bbbc044d4d68f427c1342",
           "_props": {
             "filters": [
               {
                 "Filter": [
+                  "5a341c4086f77401f2541505",
+                  "5448e5284bdc2dcb718b4567",
+                  "5448e54d4bdc2dcc718b4568",
+                  "5a341c4686f77469e155819e",
+                  "5448e5724bdc2ddf718b4568",
+                  "5a2c3a9486f774688b05e574",
+                  "5645bcb74bdc2ded0b8b4578"
+                  
+                ],
+                "ExcludedFilter": [
                   "5448eb774bdc2d0a728b4567",
                   "5448ecbe4bdc2d60728b4568",
-                  "5447e0e74bdc2d3c308b4567"
-                ],
-                "ExcludedFilter": []
+                  "5447e0e74bdc2d3c308b4567",
+                  "5447b5e04bdc2d62278b4567",
+                  "5447b5f14bdc2d61278b4567",
+                  "5447b6254bdc2dc3278b4568",
+                  "5447b5cf4bdc2d65278b4567"
+                ]
               }
             ],
             "cellsH": 10,
@@ -155,5 +171,81 @@
     "StaticLootContainers": [
     ],
     "Probability": 250
+  },
+  "68aa33e999237389088ac7d4": {
+    "itemTplToClone": "5c0a840b86f7742ffa4f2482",
+    "parentId": "5795f317245977243854e041",
+    "handbookParentId": "5b5f6fa186f77409407a7eb7",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "Item_Containers/outlanderbox.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Width": 6,
+      "Height": 4,
+      "Weight": 1.8,
+      "DiscardingBlock": false,
+      "ItemSound": "container_plastic",
+      "DiscardLimit": 0,
+      "Grids": [
+        {
+          "_name": "main",
+          "_id": "688bc098768b31618c13df7c",
+          "_parent": "68aa33e999237389088ac7d4",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5a341c4086f77401f2541505",
+                  "5448e5284bdc2dcb718b4567",
+                  "5448e54d4bdc2dcc718b4568",
+                  "5a341c4686f77469e155819e",
+                  "5448e5724bdc2ddf718b4568",
+                  "5a2c3a9486f774688b05e574",
+                  "5645bcb74bdc2ded0b8b4578"
+                ],
+                "ExcludedFilter": [
+                  "5448eb774bdc2d0a728b4567",
+                  "5448ecbe4bdc2d60728b4568",
+                  "5447e0e74bdc2d3c308b4567",
+                  "5447b5e04bdc2d62278b4567",
+                  "5447b5f14bdc2d61278b4567",
+                  "5447b6254bdc2dc3278b4568"
+                ]
+              }
+            ],
+            "cellsH": 10,
+            "cellsV": 10,
+            "minCount": 0,
+            "maxCount": 0,
+            "maxWeight": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"   
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "Outlander Box",
+        "shortName": "Outlander Box",
+        "description": "A large container designed to store tactical gear."
+      }
+    },
+    "clearClonedProps": false,
+    "addtoInventorySlots": [],
+    "addtoModSlots": false,
+    "modSlot": [],
+    "ModdableItemWhitelist": [],
+    "ModdableItemBlacklist": [],
+    "fleaPriceRoubles": 648890,
+    "handbookPriceRoubles": 544098,
+    "addtoTraders": false,
+    "traders": {},
+    "addtoBots": false,
+    "addtoStaticLootContainers": false,
+    "StaticLootContainers": [
+    ],
+    "Probability": 250  
   }
 }
