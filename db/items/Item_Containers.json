@@ -246,6 +246,72 @@
     "addtoStaticLootContainers": false,
     "StaticLootContainers": [
     ],
-    "Probability": 250  
+    "Probability": 250
+  },
+  "68b0d3ba7eb27e838cd84495": {
+    "itemTplToClone": "59fb042886f7746c5005a7b2",
+    "parentId": "5795f317245977243854e041",
+    "handbookParentId": "5b5f6fa186f77409407a7eb7",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "Item_Containers/military_duffle_bag.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Width": 4,
+      "Height": 3,
+      "Weight": 1.8,
+      "DiscardingBlock": false,
+      "ItemSound": "gear_backpack",
+      "DiscardLimit": 0,
+      "Grids": [
+        {
+          "_name": "main",
+          "_id": "688bc098768b31618c13df7c",
+          "_parent": "68b0d3ba7eb27e838cd84495",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  
+                  
+                ],
+                "ExcludedFilter": [
+                  
+                ]
+              }
+            ],
+            "cellsH": 5,
+            "cellsV": 5,
+            "minCount": 0,
+            "maxCount": 0,
+            "maxWeight": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "Military Duffle Bag",
+        "shortName": "Duffle Bag",
+        "description": "You a hoe"
+      }
+    },
+    "clearClonedProps": false,
+    "addtoInventorySlots": [],
+    "addtoModSlots": false,
+    "modSlot": [],
+    "ModdableItemWhitelist": [],
+    "ModdableItemBlacklist": [],
+    "fleaPriceRoubles": 648890,
+    "handbookPriceRoubles": 544098,
+    "addtoTraders": false,
+    "traders": {},
+    "addtoBots": false,
+    "addtoStaticLootContainers": false,
+    "StaticLootContainers": [
+    ],
+    "Probability": 250    
   }
 }
