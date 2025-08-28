@@ -27,7 +27,7 @@ public record ModMetadata : AbstractModMetadata
     public override List<string>? LoadAfter { get; set; } = [""];
     public override List<string>? Incompatibilities { get; set; } = [""];
     public override Dictionary<string, SemanticVersioning.Version>? ModDependencies { get; set; }
-    public override string? Url { get; set; } = "https://github.com/Doup22/SPT-UnknownSurvivor";
+    public override string? Url { get; set; } = "https://github.com/Doup22/SPT-UnknownSurvivor-4.0-";
     public override bool? IsBundleMod { get; set; } = true;
     public override string? License { get; init; } = "MIT";
 }

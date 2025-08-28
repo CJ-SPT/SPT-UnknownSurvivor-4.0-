@@ -1,39 +1,24 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="..\..\Build.props" />
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
   <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>_13AddTraderWithAssortJson</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>UnknownSurvivor</RootNamespace>
-    <ModName>UnknownSurvivor</ModName>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <Version>0.0.1</Version>
+    <!-- The two lines below will set the output path for the binaries -->
+    <OutputPath>bin\$(Configuration)\$(ProjectName)\$(AssemblyName)-$(Version)\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
-
   <ItemGroup>
-    <ProjectReference Include="..\..\Libraries\SPTarkov.Common\SPTarkov.Common.csproj" />
-    <ProjectReference Include="..\..\Libraries\SPTarkov.DI\SPTarkov.DI.csproj" />
-    <ProjectReference Include="..\..\Libraries\SPTarkov.Reflection\SPTarkov.Reflection.csproj" />
-    <ProjectReference Include="..\..\Libraries\SPTarkov.Server.Assets\SPTarkov.Server.Assets.csproj" />
-    <ProjectReference Include="..\..\Libraries\SPTarkov.Server.Core\SPTarkov.Server.Core.csproj" />
+    <PackageReference Include="SPTarkov.Common" Version="4.0.0-pre.20250825.1504" />
+    <PackageReference Include="SPTarkov.DI" Version="4.0.0-pre.20250825.1504" />
+    <PackageReference Include="SPTarkov.Server.Core" Version="4.0.0-pre.20250825.1504" />
   </ItemGroup>
-
   <ItemGroup>
     <Reference Include="WTTCommonLib">
-      <HintPath>..\..\SPTarkov.Server\bin\Debug\net9.0\user\mods\WTTCommonLib\WTTCommonLib.dll</HintPath>
+      <HintPath>..\WTTCommonLib\WTTCommonLib.dll</HintPath>
     </Reference>
   </ItemGroup>
-
-  <Target Name="CopyToServer" AfterTargets="PostBuildEvent">
-    <ItemGroup>
-      <OutputDLL Include="$(ProjectDir)$(OutDir)$(TargetName).dll" />
-      <Resources Include="$(ProjectDir)Resources\**\*.*" />
-    </ItemGroup>
-
-    <!-- Copies the output dll -->
-    <Copy
-      SourceFiles="@(OutputDLL)"
-      DestinationFolder="$(MSBuildProjectDirectory)\..\..\SPTarkov.Server\bin\$(Configuration)\net9.0\user\mods\$(ModName)" />
-
-    <!-- Copies resources -->
-    <Copy
-      SourceFiles="@(Resources)"
-      DestinationFolder="$(MSBuildProjectDirectory)\..\..\SPTarkov.Server\bin\$(Configuration)\net9.0\user\mods\$(ModName)\Resources\%(RecursiveDir)" />
-  </Target>
 </Project>

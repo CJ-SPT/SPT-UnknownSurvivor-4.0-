@@ -7,14 +7,14 @@ using SPTarkov.Server.Core.Models.Utils;
 using SPTarkov.Server.Core.Services;
 using SPTarkov.Server.Core.Utils.Cloners;
 
-namespace UnknownSurvivor
+namespace UnknownSurvivorAssortJsonHelper
 {
     /// <summary>
     /// We inject this class into 'AddTraderWithDynamicAssorts' to help us with adding the new trader into the server
     /// </summary>
     [Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
-    public class AddCustomTraderHelper(
-        ISptLogger<AddCustomTraderHelper> logger,
+    public class UnknownSurvivorAssortJsonHelper(
+        ISptLogger<UnknownSurvivorAssortJsonHelper> logger,
         ICloner cloner,
         DatabaseService databaseService,
         LocaleService localeService)
@@ -65,7 +65,7 @@ namespace UnknownSurvivor
                     { "Success", new() },
                     { "Fail", new() }
                 },
-                Dialogue = null
+                Dialogue = []
             };
 
             // Add the new trader id and data to the server
