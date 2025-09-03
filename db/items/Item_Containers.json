@@ -180,18 +180,15 @@
       "Prefab": {
         "path": "Item_Containers/outlanderbox.bundle",
         "rcid": ""
-      },
-      "ExaminedByDefault": true,
+      },     
       "Width": 6,
       "Height": 4,
-      "Weight": 1.8,
-      "DiscardingBlock": false,
+      "Weight": 1.8,    
       "ItemSound": "container_plastic",
-      "DiscardLimit": 0,
       "Grids": [
         {
           "_name": "main",
-          "_id": "688bc098768b31618c13df7c",
+          "_id": "68b77e9244712c797d3779b6",
           "_parent": "68aa33e999237389088ac7d4",
           "_props": {
             "filters": [
@@ -203,33 +200,152 @@
                   "5a341c4686f77469e155819e",
                   "5448e5724bdc2ddf718b4568",
                   "5a2c3a9486f774688b05e574",
-                  "5645bcb74bdc2ded0b8b4578"
+                  "5645bcb74bdc2ded0b8b4578",
+                  "5447b5e04bdc2d62278b4567",
+                  "5447b5f14bdc2d61278b4567",
+                  "5447b6254bdc2dc3278b4568",
+                  "5447b5cf4bdc2d65278b4567"
+                  
                 ],
                 "ExcludedFilter": [
                   "5448eb774bdc2d0a728b4567",
                   "5448ecbe4bdc2d60728b4568",
-                  "5447e0e74bdc2d3c308b4567",
-                  "5447b5e04bdc2d62278b4567",
-                  "5447b5f14bdc2d61278b4567",
-                  "5447b6254bdc2dc3278b4568"
+                  "5447e0e74bdc2d3c308b4567"
+                             
                 ]
               }
             ],
-            "cellsH": 10,
-            "cellsV": 10,
+            "cellsH": 20,
+            "cellsV": 15,
             "minCount": 0,
             "maxCount": 0,
             "maxWeight": 0
           },
-          "_proto": "55d329c24bdc2d892f8b4567"   
+          "_proto": "55d329c24bdc2d892f8b4567" 
+          },
+        {
+          "_id": "68b77e8daadf6f917c3f2052",
+          "_name": "2",
+          "_parent": "68aa33e999237389088ac7d4",
+          "_props": {
+            "cellsH": 2,
+            "cellsV": 15,
+            "filters": [
+              {
+                "Filter": [
+                  "5a341c4086f77401f2541505",
+                  "5448e5284bdc2dcb718b4567",
+                  "5448e54d4bdc2dcc718b4568",
+                  "5a341c4686f77469e155819e",
+                  "5448e5724bdc2ddf718b4568",
+                  "5a2c3a9486f774688b05e574",
+                  "5645bcb74bdc2ded0b8b4578",
+                  "5447b5e04bdc2d62278b4567",
+                  "5447b5f14bdc2d61278b4567",
+                  "5447b6254bdc2dc3278b4568",
+                  "5447b5cf4bdc2d65278b4567"
+                  
+                ],
+                "ExcludedFilter": [
+                  "5448eb774bdc2d0a728b4567",
+                  "5448ecbe4bdc2d60728b4568",
+                  "5447e0e74bdc2d3c308b4567"
+                ]
+              }
+            ],
+            "isSortingTable": false,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "minCount": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+        },
+        {
+          "_id": "68b77ec7790711a6fd9edc92",
+          "_name": "3",
+          "_parent": "68aa33e999237389088ac7d4",
+          "_props": {
+            "cellsH": 2,
+            "cellsV": 15,
+            "filters": [
+              {
+                "Filter": [
+                  "5a341c4086f77401f2541505",
+                  "5448e5284bdc2dcb718b4567",
+                  "5448e54d4bdc2dcc718b4568",
+                  "5a341c4686f77469e155819e",
+                  "5448e5724bdc2ddf718b4568",
+                  "5a2c3a9486f774688b05e574",
+                  "5645bcb74bdc2ded0b8b4578",
+                  "5447b5e04bdc2d62278b4567",
+                  "5447b5f14bdc2d61278b4567",
+                  "5447b6254bdc2dc3278b4568",
+                  "5447b5cf4bdc2d65278b4567"
+                  
+                ],
+                "ExcludedFilter": [
+                  "5448eb774bdc2d0a728b4567",
+                  "5448ecbe4bdc2d60728b4568",
+                  "5447e0e74bdc2d3c308b4567"
+                ]
+              }
+            ],
+            "isSortingTable": false,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "minCount": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+         },
+        {
+          "_id": "68b77fd2684273b101ec1d9d",
+          "_name": "4",
+          "_parent": "68aa33e999237389088ac7d4",
+          "_props": {
+            "cellsH": 2,
+            "cellsV": 15,
+            "filters": [
+              {
+                "Filter": [
+                  "5a341c4086f77401f2541505",
+                  "5448e5284bdc2dcb718b4567",
+                  "5448e54d4bdc2dcc718b4568",
+                  "5a341c4686f77469e155819e",
+                  "5448e5724bdc2ddf718b4568",
+                  "5a2c3a9486f774688b05e574",
+                  "5645bcb74bdc2ded0b8b4578",
+                  "5447b5e04bdc2d62278b4567",
+                  "5447b5f14bdc2d61278b4567",
+                  "5447b6254bdc2dc3278b4568",
+                  "5447b5cf4bdc2d65278b4567"
+                  
+                ],
+                "ExcludedFilter": [
+                  "5448eb774bdc2d0a728b4567",
+                  "5448ecbe4bdc2d60728b4568",
+                  "5447e0e74bdc2d3c308b4567"
+                ]
+              }
+            ],
+            "isSortingTable": false,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "minCount": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"    
         }
-      ]
+      ],
+      
+      "ExaminedByDefault": true,
+      "BackgroundColor": "violet",
+      "DiscardingBlock": false,
+      "DiscardLimit": 0   
     },
     "locales": {
       "en": {
         "name": "Outlander Box",
         "shortName": "Outlander Box",
-        "description": "A large container designed to store tactical gear."
+        "description": "A heavy-duty storage case built for maximum capacity, designed to securely hold a large collection of weapons, gear, and supplies. Rugged and reinforced, it provides ample space for even the most well-equipped operators."
       }
     },
     "clearClonedProps": false,
@@ -295,7 +411,7 @@
       "en": {
         "name": "Military Duffle Bag",
         "shortName": "Duffle Bag",
-        "description": "You a hoe"
+        "description": "FIX LATER"
       }
     },
     "clearClonedProps": false,
