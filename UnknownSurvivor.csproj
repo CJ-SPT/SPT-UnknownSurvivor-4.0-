@@ -1,24 +1,35 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-    <RootNamespace>_13AddTraderWithAssortJson</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <OutputType>Library</OutputType>
-    <Version>0.0.1</Version>
-    <!-- The two lines below will set the output path for the binaries -->
-    <OutputPath>bin\$(Configuration)\$(ProjectName)\$(AssemblyName)-$(Version)\</OutputPath>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="SPTarkov.Common" Version="4.0.0-pre.20250825.1504" />
-    <PackageReference Include="SPTarkov.DI" Version="4.0.0-pre.20250825.1504" />
-    <PackageReference Include="SPTarkov.Server.Core" Version="4.0.0-pre.20250825.1504" />
+    <PackageReference Include="SPTarkov.Common" Version="4.0.0-pre.20250912.1958" />
+    <PackageReference Include="SPTarkov.DI" Version="4.0.0-pre.20250912.1958" />
+    <PackageReference Include="SPTarkov.Reflection" Version="4.0.0-pre.20250912.1958" />
+    <PackageReference Include="SPTarkov.Server.Core" Version="4.0.0-pre.20250912.1958" />
   </ItemGroup>
+
   <ItemGroup>
     <Reference Include="WTTCommonLib">
-      <HintPath>..\WTTCommonLib\WTTCommonLib.dll</HintPath>
+      <HintPath>..\..\..\user\mods\WTTCommonLib\WTTCommonLib.dll</HintPath>
     </Reference>
   </ItemGroup>
+
+  <!-- This runs post build to copy the contents of the resource folder to a build directory -->
+  <Target Name="CopyResources" AfterTargets="PostBuildEvent">
+    <ItemGroup>
+      <Resources Include="$(ProjectDir)Resources\**\*.*" />
+    </ItemGroup>
+
+    <!-- Copy task to copy the resources folder to the bin directory -->
+    <Copy
+            SourceFiles="@(Resources);"
+            DestinationFolder="$(ProjectDir)$(OutDir)%(RecursiveDir)"
+    />
+  </Target>
+
 </Project>

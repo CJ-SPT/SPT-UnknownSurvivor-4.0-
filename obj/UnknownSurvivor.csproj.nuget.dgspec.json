@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dustin\\Desktop\\Git Repos\\UnknownSurvivor4.0\\SPT-UnknownSurvivor-4.0-\\UnknownSurvivor.csproj": {}
+    "C:\\Users\\Dustin\\RiderProjects\\SPT-UnknownSurvivor-4.0-\\UnknownSurvivor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dustin\\Desktop\\Git Repos\\UnknownSurvivor4.0\\SPT-UnknownSurvivor-4.0-\\UnknownSurvivor.csproj": {
-      "version": "0.0.1",
+    "C:\\Users\\Dustin\\RiderProjects\\SPT-UnknownSurvivor-4.0-\\UnknownSurvivor.csproj": {
+      "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dustin\\Desktop\\Git Repos\\UnknownSurvivor4.0\\SPT-UnknownSurvivor-4.0-\\UnknownSurvivor.csproj",
+        "projectUniqueName": "C:\\Users\\Dustin\\RiderProjects\\SPT-UnknownSurvivor-4.0-\\UnknownSurvivor.csproj",
         "projectName": "UnknownSurvivor",
-        "projectPath": "C:\\Users\\Dustin\\Desktop\\Git Repos\\UnknownSurvivor4.0\\SPT-UnknownSurvivor-4.0-\\UnknownSurvivor.csproj",
+        "projectPath": "C:\\Users\\Dustin\\RiderProjects\\SPT-UnknownSurvivor-4.0-\\UnknownSurvivor.csproj",
         "packagesPath": "C:\\Users\\Dustin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dustin\\Desktop\\Git Repos\\UnknownSurvivor4.0\\SPT-UnknownSurvivor-4.0-\\obj\\",
+        "outputPath": "C:\\Users\\Dustin\\RiderProjects\\SPT-UnknownSurvivor-4.0-\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,15 +53,19 @@
           "dependencies": {
             "SPTarkov.Common": {
               "target": "Package",
-              "version": "[4.0.0-pre.20250825.1504, )"
+              "version": "[4.0.0-pre.20250912.1958, )"
             },
             "SPTarkov.DI": {
               "target": "Package",
-              "version": "[4.0.0-pre.20250825.1504, )"
+              "version": "[4.0.0-pre.20250912.1958, )"
+            },
+            "SPTarkov.Reflection": {
+              "target": "Package",
+              "version": "[4.0.0-pre.20250912.1958, )"
             },
             "SPTarkov.Server.Core": {
               "target": "Package",
-              "version": "[4.0.0-pre.20250825.1504, )"
+              "version": "[4.0.0-pre.20250912.1958, )"
             }
           },
           "imports": [
@@ -76,14 +80,11 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
