@@ -15,7 +15,7 @@ using WTTCommonLib;
 
 namespace UnknownSurvivor;
 
-// This record holds the various properties for your mod
+
 public record ModMetadata : AbstractModMetadata
 {
     public override string ModGuid { get; init; } = "4d8499d3-ac24-488e-b021-32317c60f23f";
@@ -31,9 +31,7 @@ public record ModMetadata : AbstractModMetadata
     public override string? License { get; init; } = "MIT";
 }
 
-/// <summary>
-/// Feel free to use this as a base for your mod
-/// </summary>
+
 [Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
 public class AddTraderWithAssortJson(
     ModHelper modHelper,

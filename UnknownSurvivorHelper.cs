@@ -54,7 +54,7 @@ public class UnknownSurvivorAssortJsonHelper(
 
         if (!databaseService.GetTables().Traders.TryAdd(traderDetailsToAdd.Id, traderDataToAdd))
         {
-            //Failed to add trader!
+            
         }
     }
 
