@@ -8,9 +8,8 @@ using SPTarkov.Server.Core.Routers;
 using SPTarkov.Server.Core.Servers;
 using SPTarkov.Server.Core.Utils;
 using System.Reflection;
-using SPTarkov.Server.Core.Services;
 using Path = System.IO.Path;
-using WTTCommonLib;
+
 
 
 namespace UnknownSurvivor;
@@ -49,55 +48,94 @@ public class AddTraderWithAssortJson(
     private readonly RagfairConfig _ragfairConfig = configServer.GetConfig<RagfairConfig>();
 
 
-    public Task OnLoad()
+     public Task OnLoad()
+{
+    var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
+    bool debugLogging = true; 
+
+    
+    commonLib.CustomCustomItemService.CreateCustomItems(Assembly.GetExecutingAssembly());
+
+    
+    var tables = databaseServer.GetTables();
+    var questFiles = Directory.GetFiles(Path.Combine(pathToMod, "db/quests"), "*.json");
+    
+    foreach (var questFile in questFiles)
     {
-        var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
-        
-        commonLib.CustomCustomItemService.CreateCustomItems(Assembly.GetExecutingAssembly());
+        var quest = modHelper.GetJsonDataFromFile<Quest>(pathToMod, $"db/quests/{Path.GetFileName(questFile)}");
+        tables.Templates.Quests[quest.Id] = quest;
 
-        var quest1 = modHelper.GetJsonDataFromFile<Quest>(pathToMod, "db/quests/quest.json");
-        var quest2 = modHelper.GetJsonDataFromFile<Quest>(pathToMod, "db/quests/survivor_quest.json");
-
-        databaseServer.GetTables().Templates.Quests[quest1.Id] = quest1;
-        databaseServer.GetTables().Templates.Quests[quest2.Id] = quest2;
-
-        var questLocales = modHelper.GetJsonDataFromFile<Dictionary<string, string>>(
-            pathToMod,
-            "db/locales/questlocales.json"
-        );
-
-        if (databaseServer.GetTables().Locales.Global.TryGetValue("en", out var lazyloadedValue))
+        if (debugLogging)
         {
-            lazyloadedValue.AddTransformer(localesDb =>
+            Console.WriteLine($"[DEBUG] Loaded quest: {quest.Id}");
+        }
+    }
+
+    
+    var questImagesFolder = Path.Combine(pathToMod, "db/images");
+    int questImageCount = 0;
+
+    if (Directory.Exists(questImagesFolder))
+    {
+        foreach (var filePath in Directory.GetFiles(questImagesFolder))
+        {
+            var ext = Path.GetExtension(filePath).ToLower();
+            if (ext == ".png" || ext == ".jpg")
             {
-                foreach (var kvp in questLocales)
+                var fileName = Path.GetFileNameWithoutExtension(filePath);
+                var route = $"/files/quest/icon/{fileName}";
+
+                imageRouter.AddRoute(route, filePath);
+
+                if (debugLogging)
                 {
-                    localesDb[kvp.Key] = kvp.Value;
+                    Console.WriteLine($"[DEBUG] Registered quest image: {fileName}{ext}");
                 }
 
-                return localesDb;
-            });
-
-            var traderImagePath = Path.Combine(pathToMod, "res/unknownsurvivor.jpg");
-            var traderBase = modHelper.GetJsonDataFromFile<TraderBase>(pathToMod, "db/base.json");
-
-            imageRouter.AddRoute(traderBase.Avatar.Replace(".jpg", ""), traderImagePath);
-            addCustomTraderHelper.SetTraderUpdateTime(_traderConfig, traderBase, timeUtil.GetHoursAsSeconds(1),
-                timeUtil.GetHoursAsSeconds(2));
-
-            _ragfairConfig.Traders.TryAdd(traderBase.Id, true);
-            addCustomTraderHelper.AddTraderWithEmptyAssortToDb(traderBase);
-
-            addCustomTraderHelper.AddTraderToLocales(traderBase, "Survivor",
-                "Ex-Handler. Scav Recruiter. Shadow Broker.\n\nNo one knows his real name. Some say he was a foreign agent, others thought that he was a scav boss who disappeared when the city burned. What’s certain is that he survived — and now he trades in more than just food and medicine.\n\nThe Survivor has dossiers, maps, and secrets on everyone. He whispers promises to desperate Scavs, binding them to his cause with rations, stims, and bandages. Rivals call him a traitor, a liar, a ghost in the system. He calls himself a builder of something greater.\n\nWork with him, and he’ll feed you, heal you, and maybe even protect you. Cross him, and you’ll discover he’s not just another trader — he’s a man with a plan, and you might just be in it.");
-
-            var assort = modHelper.GetJsonDataFromFile<TraderAssort>(pathToMod, "db/assort.json");
-            addCustomTraderHelper.OverwriteTraderAssort(traderBase.Id, assort);
-
-            return Task.CompletedTask;
+                questImageCount++;
+            }
         }
-
-        // fallback return if "en" locale is missing
-        return Task.CompletedTask;
     }
+
+    if (debugLogging)
+    {
+        Console.WriteLine($"[DEBUG] Total quest images loaded: {questImageCount}");
+    }
+
+    
+    var questLocales = modHelper.GetJsonDataFromFile<Dictionary<string, string>>(
+        pathToMod,
+        "db/locales/questlocales.json"
+    );
+
+    if (tables.Locales.Global.TryGetValue("en", out var lazyLoadedValue))
+    {
+        lazyLoadedValue.AddTransformer(localesDb =>
+        {
+            foreach (var kvp in questLocales)
+            {
+                localesDb[kvp.Key] = kvp.Value;
+            }
+
+            return localesDb;
+        });
+    }
+    
+    var traderImagePath = Path.Combine(pathToMod, "res/unknownsurvivor.jpg");
+    var traderBase = modHelper.GetJsonDataFromFile<TraderBase>(pathToMod, "db/base.json");
+
+    imageRouter.AddRoute(traderBase.Avatar.Replace(".jpg", ""), traderImagePath);
+    addCustomTraderHelper.SetTraderUpdateTime(_traderConfig, traderBase, timeUtil.GetHoursAsSeconds(1),
+        timeUtil.GetHoursAsSeconds(2));
+
+    _ragfairConfig.Traders.TryAdd(traderBase.Id, true);
+    addCustomTraderHelper.AddTraderWithEmptyAssortToDb(traderBase);
+    addCustomTraderHelper.AddTraderToLocales(traderBase, "Survivor", "Ex-Handler...");
+
+    var assort = modHelper.GetJsonDataFromFile<TraderAssort>(pathToMod, "db/assort.json");
+    addCustomTraderHelper.OverwriteTraderAssort(traderBase.Id, assort);
+
+    return Task.CompletedTask;
+}
+
 }
