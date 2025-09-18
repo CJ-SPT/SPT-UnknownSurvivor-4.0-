@@ -38,7 +38,31 @@
                 "shaders",
                 "cubemaps",
                 "assets/commonassets/physics/physicsmaterials.bundle"
-            ]       
+            ]
+         },
+        {
+            "key": "Item_Gear/senttac_rig.bundle",
+            "dependencyKeys": [
+                "shaders",
+                "cubemaps",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]  
+        },
+        {
+            "key": "Item_Gear/guardian1_vest.bundle",
+            "dependencyKeys": [
+                "shaders",
+                "cubemaps",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ] 
+        },
+        {
+            "key": "Item_Gear/svr-9_rig.bundle",
+            "dependencyKeys": [
+                "shaders",
+                "cubemaps",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]             
         }
     ]
 }

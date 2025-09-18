@@ -1,17 +1,20 @@
 {
- "673aae3dcde0eb02557df6bb": {
+  "673aae3dcde0eb02557df6bb": {
     "itemTplToClone": "64be7095047e826eae02b0c1",
     "parentId": "5448e5284bdc2dcb718b4567",
     "handbookParentId": "5b5f6f8786f77447ed563642",
     "overrideProperties": {
       "ExaminedByDefault": true,
       "Prefab": {
-        "path": "Item_Gear/lone_dragon_rig.bundle",
+        "path": "Item_Gear/senttac_rig.bundle",
         "rcid": ""
       },
-      "Weight": 0.25,
-      "Height": 2,
-      "Width": 2,
+      "Weight": 2.5,
+      "weaponErgonomicPenalty": -0.5,
+      "speedPenaltyPercent": -0.5,
+      "mousePenalty": -0.7,
+      "Height": 3,
+      "Width": 3,
       "Grids": [
         {
           "_id": "673aae78d7fa4f7b8ac67e5e",
@@ -19,14 +22,12 @@
           "_parent": "673aae3dcde0eb02557df6bb",
           "_props": {
             "cellsH": 1,
-            "cellsV": 1,
+            "cellsV": 2,
             "filters": [
               {
                 "ExcludedFilter": [],
                 "Filter": [
-                  "5448bc234bdc2d3c308b4569",
-                  "5447b5cf4bdc2d65278b4567",
-                  "5422acb9af1c889c16000029"
+                  "54009119af1c881c07000029"
                 ]
               }
             ],
@@ -48,9 +49,7 @@
               {
                 "ExcludedFilter": [],
                 "Filter": [
-                  "5448bc234bdc2d3c308b4569",
-                  "5447b5cf4bdc2d65278b4567",
-                  "5422acb9af1c889c16000029"
+                  "54009119af1c881c07000029"
                 ]
               }
             ],
@@ -67,14 +66,12 @@
           "_parent": "673aae3dcde0eb02557df6bb",
           "_props": {
             "cellsH": 1,
-            "cellsV": 1,
+            "cellsV": 2,
             "filters": [
               {
                 "ExcludedFilter": [],
                 "Filter": [
-                  "5448bc234bdc2d3c308b4569",
-                  "5447b5cf4bdc2d65278b4567",
-                  "5422acb9af1c889c16000029"
+                  "54009119af1c881c07000029"
                 ]
               }
             ],
@@ -89,11 +86,502 @@
     },
     "locales": {
       "en": {
-        "name": "Chest Holster",
-        "shortName": "Chest Holster",
-        "description": "A chest harness with a kydex holster that can carry a small weapon and magazines."
+        "name": "Sentinel Tactical Harness",
+        "shortName": "Sentinel",
+        "description": "A rugged modular chest rig designed for long-term field use. The Sentinel balances storage and protection, featuring reinforced webbing, quick-access mag pouches, and a padded frame to distribute weight evenly. Popular among PMCs and ex-military contractors for its reliability in extended operations where mobility and gear access mean survival."
       }
     }
+  },
+  "68ca18a841bee07fb623a45e": {
+    "itemTplToClone": "5648a7494bdc2d9d488b4583",
+    "parentId": "5448e54d4bdc2dcc718b4568",
+    "handbookParentId": "5b5f701386f774093f2ecf0f",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "Item_Gear/guardian1_vest.bundle",
+        "rcid": ""
+      },
+      "Weight": 3.3,
+      "weaponErgonomicPenalty": -1.5,
+      "speedPenaltyPercent": -1.5,
+      "mousePenalty": -1.2,
+      "BackgroundColor": "blue"
+    },
+    "locales": {
+      "en": {
+        "name": "Guardian I Vest",
+        "shortName": "Guardian Vest",
+        "description": "An entry-level protective vest marketed for civilian security and private contractors. Offers minimal ballistic protection but better than nothing in a firefight"
+      }
+    },
+    "clearClonedProps": false,
+    "addtoInventorySlots": [],
+    "addtoModSlots": false,
+    "modSlot": [],
+    "ModdableItemWhitelist": [],
+    "ModdableItemBlacklist": [],
+    "fleaPriceRoubles": 62300,
+    "handbookPriceRoubles": 2050,
+    "addtoTraders": false,
+    "addtoBots": false,
+    "addtoStaticLootContainers": false,
+    "StaticLootContainers": [],
+    "masteries": false,
+    "masterySections": [],
+    "addweaponpreset": true,
+    "weaponpresets": [
+      {
+        "_changeWeaponName": false,
+        "_encyclopedia": "68ca18a841bee07fb623a45e",
+        "_id": "68ca19bed1df34218cf79e30",
+        "_items": [
+          {
+            "_id": "68ca19a00bada6d7da2b3964",
+            "_tpl": "68ca18a841bee07fb623a45e"
+          },
+          {
+            "_id": "68ca19e04eb555d2c071437b",
+            "_tpl": "6572e048371fccfbf909d5d8",
+            "parentId": "68ca19a00bada6d7da2b3964",
+            "slotId": "Soft_armor_front"
+          },
+          {
+            "_id": "68ca19e473d24037408b82f4",
+            "_tpl": "6572e059371fccfbf909d5dc",
+            "parentId": "68ca19a00bada6d7da2b3964",
+            "slotId": "Soft_armor_back"
+          },
+          {
+            "_id": "68ca19e71300c90f068b8ee7",
+            "_tpl": "6572e06219b4b511af012f89",
+            "parentId": "68ca19a00bada6d7da2b3964",
+            "slotId": "Soft_armor_left"
+          },
+          {
+            "_id": "68ca19ec2dae5f8845344e59",
+            "_tpl": "6572e06819b4b511af012f8d",
+            "parentId": "68ca19a00bada6d7da2b3964",
+            "slotId": "soft_armor_right"
+          }
+        ],
+        "_name": "Guardian I Armor Vest",
+        "_parent": "68ca19a00bada6d7da2b3964",
+        "_type": "Preset"
+      }
+    ],
+    "traders": {}
+  },
+  "68cb2dc87cc3482062c06f6d": {
+    "itemTplToClone": "639343fce101f4caa40a4ef3",
+    "parentId": "5448e5284bdc2dcb718b4567",
+    "handbookParentId": "5b5f6f8786f77447ed563642",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "Item_Gear/svr-9_rig.bundle",
+        "rcid": ""
+      },
+      "Width": 3,
+      "Height": 3,
+      "Weight": 3.8,
+      "speedPenaltyPercent": -0.75,
+      "weaponErgonomicPenalty": -0.5,
+      "Grids": [
+        {
+          "_id": "68cb2e8251f2b07e3fea01ef",
+          "_name": "1",
+          "_parent": "68cb2dc87cc3482062c06f6d",
+          "_props": {
+            "cellsH": 1,
+            "cellsV": 2,
+            "filters": [
+              {
+                "ExcludedFilter": [
+                  "5448bf274bdc2dfc2f8b456a"
+                ],
+                "Filter": [
+                  "54009119af1c881c07000029"
+                ]
+              }
+            ],
+            "isSortingTable": false,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "minCount": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+        },
+        {
+          "_id": "68cb2e85740bb66aa56a5327",
+          "_name": "2",
+          "_parent": "68cb2dc87cc3482062c06f6d",
+          "_props": {
+            "cellsH": 1,
+            "cellsV": 3,
+            "filters": [
+              {
+                "ExcludedFilter": [
+                  "5448bf274bdc2dfc2f8b456a"
+                ],
+                "Filter": [
+                  "54009119af1c881c07000029"
+                ]
+              }
+            ],
+            "isSortingTable": false,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "minCount": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+        },
+        {
+          "_id": "68cb2e8af457080f6e81f1bb",
+          "_name": "3",
+          "_parent": "68cb2dc87cc3482062c06f6d",
+          "_props": {
+            "cellsH": 1,
+            "cellsV": 3,
+            "filters": [
+              {
+                "ExcludedFilter": [
+                  "5448bf274bdc2dfc2f8b456a"
+                ],
+                "Filter": [
+                  "54009119af1c881c07000029"
+                ]
+              }
+            ],
+            "isSortingTable": false,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "minCount": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+        },
+        {
+          "_id": "68cb2e8f4a58bf6d8c1d7383",
+          "_name": "4",
+          "_parent": "68cb2dc87cc3482062c06f6d",
+          "_props": {
+            "cellsH": 1,
+            "cellsV": 2,
+            "filters": [
+              {
+                "ExcludedFilter": [
+                  "5448bf274bdc2dfc2f8b456a"
+                ],
+                "Filter": [
+                  "54009119af1c881c07000029"
+                ]
+              }
+            ],
+            "isSortingTable": false,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "minCount": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+        },
+        {
+          "_id": "68cb2e940bfa9752c3f4cf19",
+          "_name": "5",
+          "_parent": "68cb2dc87cc3482062c06f6d",
+          "_props": {
+            "cellsH": 1,
+            "cellsV": 1,
+            "filters": [
+              {
+                "ExcludedFilter": [
+                  "5448bf274bdc2dfc2f8b456a"
+                ],
+                "Filter": [
+                  "54009119af1c881c07000029"
+                ]
+              }
+            ],
+            "isSortingTable": false,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "minCount": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+        },
+        {
+          "_id": "68cb2e97fad185d589e08770",
+          "_name": "6",
+          "_parent": "68cb2dc87cc3482062c06f6d",
+          "_props": {
+            "cellsH": 1,
+            "cellsV": 1,
+            "filters": [
+              {
+                "ExcludedFilter": [
+                  "5448bf274bdc2dfc2f8b456a"
+                ],
+                "Filter": [
+                  "54009119af1c881c07000029"
+                ]
+              }
+            ],
+            "isSortingTable": false,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "minCount": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+        },
+        {
+          "_id": "68cb2e9f06b61c3d9370e35a",
+          "_name": "7",
+          "_parent": "68cb2dc87cc3482062c06f6d",
+          "_props": {
+            "cellsH": 1,
+            "cellsV": 2,
+            "filters": [
+              {
+                "ExcludedFilter": [
+                  "5448bf274bdc2dfc2f8b456a"
+                ],
+                "Filter": [
+                  "54009119af1c881c07000029"
+                ]
+              }
+            ],
+            "isSortingTable": false,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "minCount": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+        },
+        {
+          "_id": "68cb2ea2b0629ea6adea64b1",
+          "_name": "8",
+          "_parent": "68cb2dc87cc3482062c06f6d",
+          "_props": {
+            "cellsH": 1,
+            "cellsV": 2,
+            "filters": [
+              {
+                "ExcludedFilter": [
+                  "5448bf274bdc2dfc2f8b456a"
+                ],
+                "Filter": [
+                  "54009119af1c881c07000029"
+                ]
+              }
+            ],
+            "isSortingTable": false,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "minCount": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+        }
+      ],
+      "Slots": [
+        {
+          "_name": "Front_plate",
+          "_id": "68cb2eaf8e17b2e2d3036833",
+          "_parent": "68cb2dc87cc3482062c06f6d",
+          "_props": {
+            "filters": [
+              {
+                "locked": false,
+                "Plate": "656fa25e94b480b8a500c0e0",
+                "Filter": [
+                  "656f9d5900d62bcd2e02407c",
+                  "656fa8d700d62bcd2e024084",
+                  "656fa99800d62bcd2e024088",
+                  "656fae5f7c2d57afe200c0d7",
+                  "656faf0ca0dce000a2020f77",
+                  "656fa0fb498d1b7e3e071d9c",
+                  "656fafe3498d1b7e3e071da4",
+                  "656fa76500d62bcd2e024080",
+                  "656fa25e94b480b8a500c0e0",
+                  "656fad8c498d1b7e3e071da0",
+                  "656fa61e94b480b8a500c0e8",
+                  "656fb21fa0dce000a2020f7c",
+                  "656fac30c6baea13cd07e10c",
+                  "656fb0bd7c2d57afe200c0dc",
+                  "656f9fa0498d1b7e3e071d98",
+                  "656fa53d94b480b8a500c0e4",
+                  "655746010177119f4a097ff7",
+                  "64afdcb83efdfea28601d041",
+                  "65573fa5655447403702a816",
+                  "64afc71497cf3a403c01ff38"
+                ],
+                "armorColliders": [],
+                "armorPlateColliders": [
+                  "Plate_Granit_SAPI_chest"
+                ],
+                "bluntDamageReduceFromSoftArmor": true
+              }
+            ]
+          },
+          "_required": false,
+          "_mergeSlotWithChildren": true,
+          "_proto": "64479fdf9731c8fadc0642c1"
+        },
+        {
+          "_name": "Back_plate",
+          "_id": "68cb2eb2fa1403196e5d55eb",
+          "_parent": "68cb2dc87cc3482062c06f6d",
+          "_props": {
+            "filters": [
+              {
+                "locked": false,
+                "Plate": "656fa25e94b480b8a500c0e0",
+                "Filter": [
+                  "656f9d5900d62bcd2e02407c",
+                  "656fa8d700d62bcd2e024084",
+                  "656fa99800d62bcd2e024088",
+                  "656fae5f7c2d57afe200c0d7",
+                  "656faf0ca0dce000a2020f77",
+                  "656fa0fb498d1b7e3e071d9c",
+                  "656fafe3498d1b7e3e071da4",
+                  "656fa76500d62bcd2e024080",
+                  "656fa25e94b480b8a500c0e0",
+                  "656fa61e94b480b8a500c0e8",
+                  "656fad8c498d1b7e3e071da0",
+                  "656fb21fa0dce000a2020f7c",
+                  "656fac30c6baea13cd07e10c",
+                  "656fb0bd7c2d57afe200c0dc",
+                  "656f9fa0498d1b7e3e071d98",
+                  "656fa53d94b480b8a500c0e4",
+                  "65573fa5655447403702a816",
+                  "64afc71497cf3a403c01ff38",
+                  "655746010177119f4a097ff7",
+                  "64afdcb83efdfea28601d041"
+                ],
+                "armorColliders": [],
+                "armorPlateColliders": [
+                  "Plate_Granit_SAPI_back"
+                ],
+                "bluntDamageReduceFromSoftArmor": true
+              }
+            ]
+          },
+          "_required": false,
+          "_mergeSlotWithChildren": true,
+          "_proto": "64479fdf9731c8fadc0642c1"
+        },
+        {
+          "_name": "Soft_armor_front",
+          "_id": "6570f96f584a51c23e0324fb",
+          "_parent": "68cb2eec4996cacb39cf827f",
+          "_props": {
+            "filters": [
+              {
+                "locked": true,
+                "Plate": "6573101e292ecadbfa09b389",
+                "Filter": [
+                  "6573101e292ecadbfa09b389"
+                ],
+                "armorColliders": [
+                  "RibcageUp",
+                  "RibcageLow"
+                ],
+                "armorPlateColliders": [],
+                "bluntDamageReduceFromSoftArmor": false
+              }
+            ]
+          },
+          "_required": true,
+          "_mergeSlotWithChildren": true,
+          "_proto": "64479fdf9731c8fadc0642c1"
+        },
+        {
+          "_name": "Soft_armor_back",
+          "_id": "6570f96f584a51c23e0324fc",
+          "_parent": "68cb2eec4996cacb39cf827f",
+          "_props": {
+            "filters": [
+              {
+                "locked": true,
+                "Plate": "6573102b292ecadbfa09b38d",
+                "Filter": [
+                  "6573102b292ecadbfa09b38d"
+                ],
+                "armorColliders": [
+                  "SpineDown",
+                  "SpineTop"
+                ],
+                "armorPlateColliders": [],
+                "bluntDamageReduceFromSoftArmor": false
+              }
+            ]
+          },
+          "_required": true,
+          "_mergeSlotWithChildren": true,
+          "_proto": "64479fdf9731c8fadc0642c1"
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "Standardized Vest Rig",
+        "shortName": "SVR-9",
+        "description": "The SVR-9 is a modern modular rig developed for NATO-aligned security contractors. Featuring durable composite materials, optimized weight distribution, and ample storage, it delivers a balance of protection and functionality trusted by professional operators in the field."
+      }
+    },
+    "clearClonedProps": false,
+    "addtoInventorySlots": [],
+    "addtoModSlots": false,
+    "modSlot": [],
+    "ModdableItemWhitelist": [],
+    "ModdableItemBlacklist": [],
+    "fleaPriceRoubles": 74200,
+    "handbookPriceRoubles": 1745,
+    "addtoTraders": false,
+    "addtoBots": false,
+    "addtoStaticLootContainers": false,
+    "StaticLootContainers": [],
+    "masteries": false,
+    "masterySections": [],
+    "addweaponpreset": true,
+    "weaponpresets": [
+      {
+        "_changeWeaponName": false,
+        "_encyclopedia": "68cb2dc87cc3482062c06f6d",
+        "_id": "67535624077fbc8db641c885",
+        "_items": [
+          {
+            "_id": "68cb2f88d4b7db4d01aed2f4",
+            "_tpl": "68cb2dc87cc3482062c06f6d"
+          },
+          {
+            "_id": "68cb2fab94c60a8de9ae16cd",
+            "_tpl": "6573101e292ecadbfa09b389",
+            "parentId": "68cb2f88d4b7db4d01aed2f4",
+            "slotId": "Soft_armor_front"
+          },
+          {
+            "_id": "68cb2fade4ae40b8e56afc7d",
+            "_tpl": "6573102b292ecadbfa09b38d",
+            "parentId": "68cb2f88d4b7db4d01aed2f4",
+            "slotId": "Soft_armor_back"
+          },
+          {
+            "_id": "68cb2faffbd84542fac89f14",
+            "_tpl": "656fad8c498d1b7e3e071da0",
+            "parentId": "68cb2f88d4b7db4d01aed2f4",
+            "slotId": "Front_plate"
+          },
+          {
+            "_id": "68cb2fb134f7ad22885898f3",
+            "_tpl": "656fad8c498d1b7e3e071da0",
+            "parentId": "68cb2f88d4b7db4d01aed2f4",
+            "slotId": "Back_plate"
+          }
+        ],
+        "_name": "Standardized Vest Rig",
+        "_parent": "68cb2f88d4b7db4d01aed2f4",
+        "_type": "Preset"
+      }
+    ],
+    "traders": {}
   }
 }
-
