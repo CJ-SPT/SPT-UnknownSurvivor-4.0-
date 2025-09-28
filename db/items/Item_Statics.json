@@ -58,6 +58,51 @@
     "addtoStaticLootContainers": false,
     "StaticLootContainers": [],
     "Probability": 250
+  },
+  "68c221b72e17276b6ccdd285": {
+    "itemTplToClone": "59faff1d86f7746c51718c9c",
+    "parentId": "57864a3d24597754843f8721",
+    "handbookParentId": "5b47574386f77428ca22b2f1",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "assets/content/items/equipment/backpack_pillbox/item_equipment_backpack_pillbox.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "BackgroundColor": "violet",
+      "ItemSound": "generic",
+      "QuestItem": true,
+      "DiscardingBlock": false,
+      "DiscardLimit": 0,
+      "Width": 3,
+      "Height": 3,
+      "Weight": 6.804
+    },
+    "locales": {
+      "en": {
+        "name": "Mysterious Backpack",
+        "shortName": "Backpack",
+        "description": "A backpack that contains a small amount of supplies."
+      }
+    },
+    "clearClonedProps": false,
+    "addtoInventorySlots": [],
+    "addtoModSlots": false,
+    "modSlot": [
+      "mod_muzzle"
+    ],
+    "ModdableItemWhitelist": [],
+    "ModdableItemBlacklist": [],
+    "fleaPriceRoubles": 18890,
+    "handbookPriceRoubles": 13440,
+    "addtoTraders": false,
+    "addtoBots": false,
+    "addtoStaticLootContainers": false,
+    "canSellOnRagfair": false,
+    "isUnsaleable": true,
+    "Probability": 250,
+    "traders": {},
+    "StaticLootContainers": []  
   }
 }
 

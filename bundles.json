@@ -49,7 +49,7 @@
             ]  
         },
         {
-            "key": "Item_Gear/guardian1_vest.bundle",
+            "key": "Item_ArmorVests/guardian1_vest.bundle",
             "dependencyKeys": [
                 "shaders",
                 "cubemaps",
@@ -57,12 +57,36 @@
             ] 
         },
         {
-            "key": "Item_Gear/svr-9_rig.bundle",
+            "key": "Item_ArmoredRigs/svr-9_rig.bundle",
             "dependencyKeys": [
                 "shaders",
                 "cubemaps",
                 "assets/commonassets/physics/physicsmaterials.bundle"
-            ]             
+            ]
+         },
+        {
+            "key": "Item_Gear/ssh68n.bundle",
+            "dependencyKeys": [
+                "shaders",
+                "cubemaps",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ] 
+        },
+        {
+            "key": "Item_ArmoredRigs/anam2_vest.bundle",
+            "dependencyKeys": [
+                "shaders",
+                "cubemaps",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ] 
+        },
+        {
+            "key": "Item_ArmorVests/6b232_bamboo.bundle",
+            "dependencyKeys": [
+                "shaders",
+                "cubemaps",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]                       
         }
     ]
 }
