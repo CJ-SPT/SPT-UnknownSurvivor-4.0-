@@ -17,7 +17,7 @@ namespace UnknownSurvivor;
 
 public record ModMetadata : AbstractModMetadata
 {
-    public override string ModGuid { get; init; } = "4d8499d3-ac24-488e-b021-32317c60f23f";
+    public override string ModGuid { get; init; } = "com.dsnyder.unknownsurvivor";
     public override string Name { get; init; } = "Unknown Survivor";
     public override string Author { get; init; } = "Dsnyder";
     public override List<string>? Contributors { get; init; } = ["Dsnyder"];
@@ -39,7 +39,7 @@ public class AddTraderWithAssortJson(
     TimeUtil timeUtil,
     UnknownSurvivorAssortJsonHelper addCustomTraderHelper,
     DatabaseServer databaseServer,
-    WTTCommonLib.WTTCommonLib commonLib
+    WTTServerCommonLib.WTTServerCommonLib commonLib
 
 )
     : IOnLoad
@@ -48,13 +48,14 @@ public class AddTraderWithAssortJson(
     private readonly RagfairConfig _ragfairConfig = configServer.GetConfig<RagfairConfig>();
 
 
-     public Task OnLoad()
+    public Task OnLoad()
 {
     var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
     bool debugLogging = true; 
 
     
-    commonLib.CustomCustomItemService.CreateCustomItems(Assembly.GetExecutingAssembly());
+    commonLib.CustomItemServiceExtended.CreateCustomItems(Assembly.GetExecutingAssembly());
+    commonLib.CustomLootspawnService.AddCustomLootSpawns(Assembly.GetExecutingAssembly());
 
     
     var tables = databaseServer.GetTables();

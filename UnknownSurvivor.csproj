@@ -7,15 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SPTarkov.Common" Version="4.0.0-pre.20250912.1958" />
-    <PackageReference Include="SPTarkov.DI" Version="4.0.0-pre.20250912.1958" />
-    <PackageReference Include="SPTarkov.Reflection" Version="4.0.0-pre.20250912.1958" />
-    <PackageReference Include="SPTarkov.Server.Core" Version="4.0.0-pre.20250912.1958" />
+    <PackageReference Include="SPTarkov.Common" Version="4.0.0-pre.20251002.2103" />
+    <PackageReference Include="SPTarkov.DI" Version="4.0.0-pre.20251002.2103" />
+    <PackageReference Include="SPTarkov.Server.Core" Version="4.0.0-pre.20251002.2103" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="WTTCommonLib">
       <HintPath>..\..\..\user\mods\WTTCommonLib\WTTCommonLib.dll</HintPath>
+    </Reference>
+    <Reference Include="WTTServerCommonLib">
+      <HintPath>..\..\..\user\mods\WTTCommonLib\WTTServerCommonLib.dll</HintPath>
     </Reference>
   </ItemGroup>
 
