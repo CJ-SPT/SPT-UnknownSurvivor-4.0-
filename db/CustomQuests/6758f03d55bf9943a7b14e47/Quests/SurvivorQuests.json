@@ -5,7 +5,7 @@
     "traderId": "6758f03d55bf9943a7b14e47",
     "type": "Elimination",
     "location": "any",
-    "image": "/files/quest/icon/GainingTrust_quest.png",
+    "image": "/files/quest/icon/SupplyandDemand.png",
     "instantComplete": false,
     "isKey": false,
     "secretQuest": false,
@@ -31,7 +31,7 @@
           "parentId": "",
           "conditionType": "Level",
           "compareMethod": ">=",
-          "value": 1,
+          "value": 3,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "visibilityConditions": []
@@ -39,56 +39,52 @@
       ],
       "AvailableForFinish": [
         {
-          "id": "676393619e3474a77c9cb870",
-          "index": 0,
-          "parentId": "",
-          "conditionType": "CounterCreator",
-          "type": "Elimination",
-          "value": 3,
-          "completeInSeconds": 0,
+          "conditionType": "LeaveItemAtLocation",
+          "dogtagLevel": 0,
           "dynamicLocale": false,
-          "doNotResetIfCounterCompleted": false,
-          "oneSessionOnly": false,
           "globalQuestCounterId": "",
+          "id": "676393619e3474a77c9cb870",
+          "index": 3,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "plantTime": 20,
+          "target": [
+            "5991b51486f77447b112d44f"
+          ],
+          "value": 1,
           "visibilityConditions": [],
-          "counter": {
-            "id": "676387b67628063b8ecebbcf",
-            "conditions": [
-              {
-                "id": "67638707486ef2126c949640",
-                "conditionType": "Kills",
-                "target": "Savage",
-                "value": 1,
-                "compareMethod": ">=",
-                "bodyPart": [],
-                "weapon": [],
-                "weaponCaliber": [],
-                "weaponModsInclusive": [],
-                "weaponModsExclusive": [],
-                "enemyEquipmentInclusive": [],
-                "enemyEquipmentExclusive": [],
-                "enemyHealthEffects": [],
-                "savageRole": [],
-                "daytime": {
-                  "from": 0,
-                  "to": 0
-                },
-                "distance": {
-                  "compareMethod": ">=",
-                  "value": 0
-                },
-                "dynamicLocale": false,
-                "resetOnSessionEnd": false
-              }
-            ]
-          }
-        }
+          "zoneId": "Survivor_MarkMeds_Supply_Quest"
+              }    
       ],
       "Fail": []
     },
     "rewards": {
       "Fail": [],
-      "Started": [],
+      "Started": [
+        {
+          "availableInGameEditions": [],
+          "findInRaid": true,
+          "id": "68f48b1018ecbab2e16fba59",
+          "index": 0,
+          "items": [
+            {
+              "_id": "68f48b158665382e61e77684",
+              "_tpl": "5991b51486f77447b112d44f",
+              "upd": {
+                "SpawnedInSession": true,
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "68f48b158665382e61e77684",
+          "type": "Item",
+          "unknown": false,
+          "value": 1
+        }
+      ],
       "Success": [
         {
           "id": "6763935ae083108549a15b23",
@@ -106,21 +102,7 @@
           "value": 0.05,
           "unknown": false,
           "gameMode": [],
-          "availableInGameEditions": [
-            "unheard_edition"
-          ],
-          "isHidden": false
-        },
-        {
-          "id": "67817d033af6b040a01d4f95",
-          "type": "TraderStanding",
-          "target": "6758f03d55bf9943a7b14e47",
-          "value": 0.15,
-          "unknown": false,
-          "gameMode": [],
-          "availableInGameEditions": [
-            "standard"
-          ],
+          "availableInGameEditions": [],
           "isHidden": false
         },
         {
@@ -143,6 +125,48 @@
           "gameMode": [],
           "availableInGameEditions": [],
           "isHidden": false
+        },
+        {
+          "availableInGameEditions": [],
+          "id": "68f54f6915442476bded2d20",
+          "items": [
+            {
+              "_id": "68a6053f63de183b05e9d373",
+              "_tpl": "544fb37f4bdc2dee738b4567"
+            }
+          ],
+          "loyaltyLevel": 1,
+          "target": "68a6053f63de183b05e9d373",
+          "traderId": "6758f03d55bf9943a7b14e47",
+          "type": "AssortmentUnlock"
+        },
+        {
+          "availableInGameEditions": [],
+          "id": "68f54fb127ccfc80f80adef4",
+          "items": [
+            {
+              "_id": "68a605aafc60f0baa0e9d374",
+              "_tpl": "590c661e86f7741e566b646a"
+            }
+          ],
+          "loyaltyLevel": 1,
+          "target": "68a605aafc60f0baa0e9d374",
+          "traderId": "6758f03d55bf9943a7b14e47",
+          "type": "AssortmentUnlock"
+        },
+        {
+          "availableInGameEditions": [],
+          "id": "68f54fd9d5bc8ca050f43030",
+          "items": [
+            {
+              "_id": "68a621ffc9e9a88a4a4060a1",
+              "_tpl": "5e831507ea0a7c419c2f9bd9"
+            }
+          ],
+          "loyaltyLevel": 1,
+          "target": "68a621ffc9e9a88a4a4060a1",
+          "traderId": "6758f03d55bf9943a7b14e47",
+          "type": "AssortmentUnlock"      
         }
       ]
     }
