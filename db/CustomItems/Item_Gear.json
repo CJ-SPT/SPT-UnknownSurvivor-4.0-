@@ -1,0 +1,311 @@
+{
+  "673aae3dcde0eb02557df6bb": {
+    "itemTplToClone": "64be7110bf597ba84a0a41ea",
+    "parentId": "5448e5284bdc2dcb718b4567",
+    "handbookParentId": "5b5f6f8786f77447ed563642",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "Item_Gear/senttac_rig.bundle",
+        "rcid": ""
+      },
+      "Weight": 2.5,
+      "weaponErgonomicPenalty": -0.5,
+      "speedPenaltyPercent": -0.5,
+      "mousePenalty": -0.7,
+      "Height": 3,
+      "Width": 3,
+      "Grids": [
+        {
+          "_id": "68d98198c00ecc2b55781fc7",
+          "_name": "1",
+          "_parent": "673aae3dcde0eb02557df6bb",
+          "_props": {
+            "cellsH": 1,
+            "cellsV": 1,
+            "filters": [
+              {
+                "ExcludedFilter": ["5448bf274bdc2dfc2f8b456a"],
+                "Filter": ["54009119af1c881c07000029"]
+              }
+            ],
+            "isSortingTable": false,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "minCount": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+        },
+        {
+          "_id": "68d981941ee88767add7efd3",
+          "_name": "2",
+          "_parent": "673aae3dcde0eb02557df6bb",
+          "_props": {
+            "cellsH": 1,
+            "cellsV": 1,
+            "filters": [
+              {
+                "ExcludedFilter": ["5448bf274bdc2dfc2f8b456a"],
+                "Filter": ["54009119af1c881c07000029"]
+              }
+            ],
+            "isSortingTable": false,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "minCount": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+        },
+        {
+          "_id": "68d98191be423276fde013df",
+          "_name": "3",
+          "_parent": "673aae3dcde0eb02557df6bb",
+          "_props": {
+            "cellsH": 1,
+            "cellsV": 1,
+            "filters": [
+              {
+                "ExcludedFilter": ["5448bf274bdc2dfc2f8b456a"],
+                "Filter": ["54009119af1c881c07000029"]
+              }
+            ],
+            "isSortingTable": false,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "minCount": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+        },
+        {
+          "_id": "68d9818de35a1c5558b69c22",
+          "_name": "4",
+          "_parent": "673aae3dcde0eb02557df6bb",
+          "_props": {
+            "cellsH": 1,
+            "cellsV": 1,
+            "filters": [
+              {
+                "ExcludedFilter": ["5448bf274bdc2dfc2f8b456a"],
+                "Filter": ["54009119af1c881c07000029"]
+              }
+            ],
+            "isSortingTable": false,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "minCount": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+        },
+        {
+          "_id": "68d9818b15778461ff2b7a4c",
+          "_name": "5",
+          "_parent": "673aae3dcde0eb02557df6bb",
+          "_props": {
+            "cellsH": 1,
+            "cellsV": 2,
+            "filters": [
+              {
+                "ExcludedFilter": ["5448bf274bdc2dfc2f8b456a"],
+                "Filter": ["54009119af1c881c07000029"]
+              }
+            ],
+            "isSortingTable": false,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "minCount": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+        },
+        {
+          "_id": "68d98188ab3360e126503163",
+          "_name": "6",
+          "_parent": "673aae3dcde0eb02557df6bb",
+          "_props": {
+            "cellsH": 1,
+            "cellsV": 2,
+            "filters": [
+              {
+                "ExcludedFilter": ["5448bf274bdc2dfc2f8b456a"],
+                "Filter": ["54009119af1c881c07000029"]
+              }
+            ],
+            "isSortingTable": false,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "minCount": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+        },
+        {
+          "_id": "68d9816760c88878a14a1f54",
+          "_name": "7",
+          "_parent": "673aae3dcde0eb02557df6bb",
+          "_props": {
+            "cellsH": 1,
+            "cellsV": 2,
+            "filters": [
+              {
+                "ExcludedFilter": ["5448bf274bdc2dfc2f8b456a"],
+                "Filter": ["54009119af1c881c07000029"]
+              }
+            ],
+            "isSortingTable": false,
+            "maxCount": 0,
+            "maxWeight": 0,
+            "minCount": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "Sentinel Tactical Harness",
+        "shortName": "Sentinel",
+        "description": "A rugged modular chest rig designed for long-term field use. The Sentinel balances storage and protection, featuring reinforced webbing, quick-access mag pouches, and a padded frame to distribute weight evenly. Popular among PMCs and ex-military contractors for its reliability in extended operations where mobility and gear access mean survival."
+      }
+    },
+    "addtoInventorySlots": null,
+    "addtoModSlots": false,
+    "modSlot": [],
+    "fleaPriceRoubles": 9000,
+    "handbookPriceRoubles": 8451,
+    "addtoTraders": false,
+    "addtoBots": false,
+    "addtoStaticLootContainers": false,
+    "staticLootContainers": null,
+    "masteries": false,
+    "masterySections": null,
+    "addWeaponPreset": false
+    
+  },
+  "68cb736e4844f7b17d737569": {
+    "itemTplToClone": "5c06c6a80db834001b735491",
+    "parentId": "5a341c4086f77401f2541505",
+    "handbookParentId": "5b47574386f77428ca22b330",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "Item_Gear/ssh68n.bundle",
+        "rcid": ""
+      },
+      "Weight": 1.55,
+      "weaponErgonomicPenalty": -3.5,
+      "Slots": [
+        {
+          "_name": "Helmet_top",
+          "_id": "68cb73c642c8e308f03b4aed",
+          "_parent": "68cb736e4844f7b17d737569",
+          "_props": {
+            "filters": [
+              {
+                "locked": true,
+                "Plate": "657bbad7a1c61ee0c3036323",
+                "Filter": ["657bbad7a1c61ee0c3036323"],
+                "armorColliders": ["ParietalHead"],
+                "armorPlateColliders": [],
+                "bluntDamageReduceFromSoftArmor": false
+              }
+            ]
+          },
+          "_required": true,
+          "_mergeSlotWithChildren": true,
+          "_proto": "64479fdf9731c8fadc0642c1"
+        },
+        {
+          "_name": "Helmet_back",
+          "_id": "68cb73d62ac6202b8baab93e",
+          "_parent": "68cb736e4844f7b17d737569",
+          "_props": {
+            "filters": [
+              {
+                "locked": true,
+                "Plate": "657bbb31b30eca9763051183",
+                "Filter": ["657bbb31b30eca9763051183"],
+                "armorColliders": ["BackHead"],
+                "armorPlateColliders": [],
+                "bluntDamageReduceFromSoftArmor": false
+              }
+            ]
+          },
+          "_required": true,
+          "_mergeSlotWithChildren": true,
+          "_proto": "64479fdf9731c8fadc0642c1"
+        },
+        {
+          "_name": "Helmet_ears",
+          "_id": "68cb73da52218854164004ae",
+          "_parent": "68cb736e4844f7b17d737569",
+          "_props": {
+            "filters": [
+              {
+                "locked": true,
+                "Plate": "657babc6f58ba5a6250107a2",
+                "Filter": ["657babc6f58ba5a6250107a2"],
+                "armorColliders": ["Ears"],
+                "armorPlateColliders": [],
+                "bluntDamageReduceFromSoftArmor": false
+              }
+            ]
+          },
+          "_required": true,
+          "_mergeSlotWithChildren": true,
+          "_proto": "64479fdf9731c8fadc0642c1"
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "SSh-68n Steel Helmet (Lichen Digital)",
+        "shortName": "SSh-68n",
+        "description": "The SSH-68N is a late-production variant of the classic Soviet steel helmet, updated with improved internal suspension and a more durable paint finish. While offering the same ballistic protection as its predecessor, the 68N features slightly enhanced comfort and reduced glare, making it a common sight among post-Soviet forces and civilian security groups."
+      }
+    },
+    "addtoInventorySlots": null,
+    "addtoModSlots": false,
+    "modSlot": [],
+    "fleaPriceRoubles": 27500,
+    "handbookPriceRoubles": 1310,
+    "addtoTraders": false,
+    "addtoBots": false,
+    "addtoStaticLootContainers": false,
+    "staticLootContainers": null,
+    "masteries": false,
+    "masterySections": null,
+    "addWeaponPreset": true,
+    "weaponPresets": [
+      {
+        "_changeWeaponName": false,
+        "_encyclopedia": "68cb736e4844f7b17d737569",
+        "_id": "68cb740f4051b3081eebbeaf",
+        "_items": [
+          {
+            "_id": "68cb7413f02261b846d73ed9",
+            "_tpl": "68cb736e4844f7b17d737569"
+          },
+          {
+            "_id": "680be275e4d83de168209594",
+            "_tpl": "657bbad7a1c61ee0c3036323",
+            "parentId": "68cb7413f02261b846d73ed9",
+            "slotId": "Helmet_top"
+          },
+          {
+            "_id": "680be27816fb5909a0a6fdfc",
+            "_tpl": "657bbb31b30eca9763051183",
+            "parentId": "68cb7413f02261b846d73ed9",
+            "slotId": "Helmet_back"
+          },
+          {
+            "_id": "680be27b4e135435f4c590d8",
+            "_tpl": "657babc6f58ba5a6250107a2",
+            "parentId": "68cb7413f02261b846d73ed9",
+            "slotId": "Helmet_ears"
+          }
+        ],
+        "_name": "SSh68n Lichen Digital",
+        "_parent": "68cb7413f02261b846d73ed9",
+        "_type": "Preset"
+      }
+    ]
+  }
+}

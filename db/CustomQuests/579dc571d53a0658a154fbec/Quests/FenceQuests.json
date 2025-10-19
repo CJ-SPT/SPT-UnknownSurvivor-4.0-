@@ -1,0 +1,157 @@
+{
+  "68be2b1755144754ce8835d0": {
+    "QuestName": "68be2b1755144754ce8835d0_name",
+    "_id": "68be2b1755144754ce8835d0",
+    "traderId": "579dc571d53a0658a154fbec",
+    "type": "Completion",
+    "location": "653e6760052c01c1c805532f",
+    "image": "/files/quest/icon/5d67b2a086f774131e206c05.jpg",
+    "instantComplete": false,
+    "isKey": false,
+    "secretQuest": false,
+    "side": "Pmc",
+    "sideExclusive": "Pmc",
+    "description": "68be2b1755144754ce8835d0_description",
+    "startedMessageText": "68be2b1755144754ce8835d0_started",
+    "successMessageText": "68be2b1755144754ce8835d0_success",
+    "failMessageText": "68be2b1755144754ce8835d0_fail",
+    "acceptPlayerMessage": "68be2b1755144754ce8835d0_accept",
+    "declinePlayerMessage": "68be2b1755144754ce8835d0_decline",
+    "completePlayerMessage": "68be2b1755144754ce8835d0_complete",
+    "changeQuestMessageText": "68be2b1755144754ce8835d0_change",
+    "name": "68be2b1755144754ce8835d0_name",
+    "note": "68be2b1755144754ce8835d0_note",
+    "restartable": false,
+    "canShowNotificationsInGame": true,
+    "conditions": {
+      "AvailableForStart": [
+        {
+          "id": "67639033b4e03b37007e018f",
+          "index": 0,
+          "parentId": "",
+          "conditionType": "Level",
+          "compareMethod": ">=",
+          "value": 5,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForFinish": [
+        {
+          "id": "68c1d84c6ad813879c6e4610",
+          "index": 0,
+          "parentId": "",
+          "conditionType": "CounterCreator",
+          "type": "Exploration",
+          "value": 1,
+          "oneSessionOnly": false,
+          "isResetOnConditionFailed": false,
+          "isNecessary": false,
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "visibilityConditions": [],
+          "completeInSeconds": 0,
+          "counter": {
+            "id": "68c1d3b5fc075e7e4b1473ad",
+            "conditions": [
+              {
+                "id": "68c1cfb18290bb6b18a14e67",
+                "conditionType": "VisitPlace",
+                "target": "Fence_GroundZero_Zone",
+                "value": 1,
+                "dynamicLocale": false
+              }
+            ]
+          }
+        },
+        {
+          "id": "68f3fceb709d8cc5468bcb7d",
+          "index": 1,
+          "parentId": "",
+          "conditionType": "LeaveItemAtLocation",
+          "target": ["68c221b72e17276b6ccdd285"],
+          "value": 1,
+          "plantTime": 20,
+          "zoneId": "Fence_Place_Bag",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "rewards": {
+      "Started": [
+        {
+          "id": "68c22d877b00483081934015",
+          "type": "Item",
+          "target": "68c22d8b7a5c787726120ab9",
+          "value": 1,
+          "unknown": false,
+          "findInRaid": true,
+          "availableInGameEditions": [],
+          "index": 0,
+          "items": [
+            {
+              "_id": "68c22d8b7a5c787726120ab9",
+              "_tpl": "68c221b72e17276b6ccdd285",
+              "upd": {
+                "SpawnedInSession": true,
+                "StackObjectsCount": 1
+              }
+            }
+          ]
+        }
+      ],
+      "Success": [
+        {
+          "id": "5d65672186f774766e559dc9",
+          "type": "Experience",
+          "value": 4500,
+          "unknown": false,
+          "gameMode": [],
+          "availableInGameEditions": [],
+          "isHidden": false
+        },
+        {
+          "id": "60cc74fd77dc197c774254be",
+          "type": "Item",
+          "target": "68a9695194f6582e59140be7",
+          "value": 30000,
+          "unknown": false,
+          "findInRaid": false,
+          "isEncoded": false,
+          "gameMode": [],
+          "availableInGameEditions": [],
+          "isHidden": false,
+          "items": [
+            {
+              "_id": "68a9695194f6582e59140be7",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 30000
+              }
+            }
+          ]
+        },
+        {
+          "id": "5d78c49786f7745041358b58",
+          "type": "TraderUnlock",
+          "target": "6758f03d55bf9943a7b14e47",
+          "unknown": false,
+          "gameMode": [],
+          "availableInGameEditions": [],
+          "isHidden": false
+        }
+      ],
+      "Fail": []
+    },
+    "status": 0,
+    "progressSource": "eft",
+    "rankingModes": [],
+    "gameModes": [],
+    "arenaLocations": []
+  }
+}

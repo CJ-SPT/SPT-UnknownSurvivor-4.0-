@@ -1,0 +1,97 @@
+{
+  "68941a8dbcd80caaeb507b96": {
+    "itemTplToClone": "5449016a4bdc2d6f028b456f",
+    "parentId": "543be5dd4bdc2deb348b4569",
+    "handbookParentId": "5b5f6fa186f77409407a7eb7",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "Item_Statics/t_koin_currency.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Width": 1,
+      "Height": 1,
+      "Weight": 0.05,
+      "DiscardingBlock": false,
+      "CanSellOnRagfair": false,
+      "ItemSound": "jewlery",
+      "DiscardLimit": 0,
+      "Grids": [
+        {
+          "_name": "main",
+          "_id": "688bc098768b31618c13df7c",
+          "_parent": "68941a8dbcd80caaeb507b96",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [],
+                "ExcludedFilter": []
+              }
+            ],
+            "cellsH": 0,
+            "cellsV": 0,
+            "minCount": 0,
+            "maxCount": 0,
+            "maxWeight": 0
+          },
+          "_proto": "55d329c24bdc2d892f8b4567"
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "Black Note",
+        "shortName": "BNT",
+        "description": "Encrypted digital credits passed through the Survivor’s hidden network. Said to be a relic of CIA black-budget projects, these tokens exist off the books, untraceable and deniable. In Tarkov, they buy more than goods — they buy silence, loyalty, and power."
+      }
+    },
+    "addtoInventorySlots": null,
+    "addtoModSlots": false,
+    "modSlot": [],
+    "fleaPriceRoubles": 648890,
+    "handbookPriceRoubles": 544098,
+    "addtoTraders": false,
+    "addtoBots": false,
+    "addtoStaticLootContainers": false,
+    "staticLootContainers": null
+  },
+  "68c221b72e17276b6ccdd285": {
+    "itemTplToClone": "59faff1d86f7746c51718c9c",
+    "parentId": "57864a3d24597754843f8721",
+    "handbookParentId": "5b47574386f77428ca22b2f1",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "assets/content/items/equipment/backpack_pillbox/item_equipment_backpack_pillbox.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "BackgroundColor": "violet",
+      "ItemSound": "generic",
+      "QuestItem": true,
+      "DiscardingBlock": false,
+      "DiscardLimit": 0,
+      "Width": 3,
+      "Height": 3,
+      "Weight": 6.804
+    },
+    "locales": {
+      "en": {
+        "name": "Mysterious Backpack",
+        "shortName": "Backpack",
+        "description": "A backpack that contains a small amount of supplies."
+      }
+    },
+    "addtoInventorySlots": null,
+    "addtoModSlots": false,
+    "modSlot": [
+      "mod_muzzle"
+    ],
+    "fleaPriceRoubles": 18890,
+    "handbookPriceRoubles": 13440,
+    "addtoTraders": false,
+    "addtoBots": false,
+    "addtoStaticLootContainers": false,
+    "staticLootContainers": null  
+  }
+}
+

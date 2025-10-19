@@ -1,0 +1,102 @@
+[
+  {
+    "ZoneId": "Fence_GroundZero_Zone",
+    "ZoneName": "Fence_GroundZero_Zone",
+    "ZoneLocation": "Sandbox_high",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "-17.64327",
+      "Y": "22.7963",
+      "Z": "329.8601",
+      "W": "0"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0",
+      "W": "1"
+    },
+    "Scale": {
+      "X": "5",
+      "Y": "1",
+      "Z": "2.5",
+      "W": "0"
+    }
+  },
+  {
+    "ZoneId": "Fence_Place_Bag",
+    "ZoneName": "Fence_Place_Bag",
+    "ZoneLocation": "Sandbox_high",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "-15.50969",
+      "Y": "22.76341",
+      "Z": "333.3501",
+      "W": "0"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0",
+      "W": "1"
+    },
+    "Scale": {
+      "X": "1.5",
+      "Y": "1",
+      "Z": "1.5",
+      "W": "0"
+    }
+  },
+  {
+    "ZoneId": "Fence_GroundZero_Zone",
+    "ZoneName": "Fence_GroundZero_Zone",
+    "ZoneLocation": "Sandbox",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "-17.64327",
+      "Y": "22.7963",
+      "Z": "329.8601",
+      "W": "0"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0",
+      "W": "1"
+    },
+    "Scale": {
+      "X": "5",
+      "Y": "1",
+      "Z": "2.5",
+      "W": "0"
+    }
+  },
+  {
+    "ZoneId": "Fence_Place_Bag",
+    "ZoneName": "Fence_Place_Bag",
+    "ZoneLocation": "Sandbox",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "-15.50969",
+      "Y": "22.76341",
+      "Z": "333.3501",
+      "W": "0"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0",
+      "W": "1"
+    },
+    "Scale": {
+      "X": "1.5",
+      "Y": "1",
+      "Z": "1.5",
+      "W": "0"
+    }
+  }
+]

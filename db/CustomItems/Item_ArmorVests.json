@@ -1,0 +1,410 @@
+{
+  "68ca18a841bee07fb623a45e": {
+    "itemTplToClone": "5648a7494bdc2d9d488b4583",
+    "parentId": "5448e54d4bdc2dcc718b4568",
+    "handbookParentId": "5b5f701386f774093f2ecf0f",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "Item_ArmorVests/guardian1_vest.bundle",
+        "rcid": ""
+      },
+      "Weight": 3.3,
+      "weaponErgonomicPenalty": -1.5,
+      "speedPenaltyPercent": -1.5,
+      "mousePenalty": -1.2,
+      "BackgroundColor": "blue"
+    },
+    "locales": {
+      "en": {
+        "name": "Guardian I Vest",
+        "shortName": "Guardian Vest",
+        "description": "An entry-level protective vest marketed for civilian security and private contractors. Offers minimal ballistic protection but better than nothing in a firefight"
+      }
+    },
+    "addtoInventorySlots": null,
+    "addtoModSlots": false,
+    "modSlot": [],
+    "fleaPriceRoubles": 31987,
+    "handbookPriceRoubles": 1415,
+    "addtoTraders": false,
+    "addtoBots": false,
+    "addtoStaticLootContainers": false,
+    "staticLootContainers": null,
+    "masteries": false,
+    "masterySections": null,
+    "addWeaponPreset": true,
+    "weaponPresets": [
+      {
+        "_changeWeaponName": false,
+        "_encyclopedia": "68ca18a841bee07fb623a45e",
+        "_id": "68ca19bed1df34218cf79e30",
+        "_items": [
+          {
+            "_id": "68ca19a00bada6d7da2b3964",
+            "_tpl": "68ca18a841bee07fb623a45e"
+          },
+          {
+            "_id": "68ca19e04eb555d2c071437b",
+            "_tpl": "6572e048371fccfbf909d5d8",
+            "parentId": "68ca19a00bada6d7da2b3964",
+            "slotId": "Soft_armor_front"
+          },
+          {
+            "_id": "68ca19e473d24037408b82f4",
+            "_tpl": "6572e059371fccfbf909d5dc",
+            "parentId": "68ca19a00bada6d7da2b3964",
+            "slotId": "Soft_armor_back"
+          },
+          {
+            "_id": "68ca19e71300c90f068b8ee7",
+            "_tpl": "6572e06219b4b511af012f89",
+            "parentId": "68ca19a00bada6d7da2b3964",
+            "slotId": "Soft_armor_left"
+          },
+          {
+            "_id": "68ca19ec2dae5f8845344e59",
+            "_tpl": "6572e06819b4b511af012f8d",
+            "parentId": "68ca19a00bada6d7da2b3964",
+            "slotId": "soft_armor_right"
+          }
+        ],
+        "_name": "Guardian I Armor Vest",
+        "_parent": "68ca19a00bada6d7da2b3964",
+        "_type": "Preset"
+      }
+    ]
+  },
+    "68d492870c720da265d03908": {
+    "itemTplToClone": "5c0e57ba86f7747fa141986d",
+    "parentId": "5448e54d4bdc2dcc718b4568",
+    "handbookParentId": "5b5f701386f774093f2ecf0f",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "Item_ArmorVests/6b232_bamboo.bundle",
+        "rcid": ""
+      },
+      "Weight": 3.3,
+      "BackgroundColor": "blue",
+      "Slots": [
+        {
+          "_id": "68e577e908654c1e92948887",
+          "_mergeSlotWithChildren": true,
+          "_name": "Front_plate",
+          "_parent": "68d492870c720da265d03908",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "656f664200d62bcd2e024077",
+                  "654a4dea7c17dec2f50cc86a",
+                  "656f66b5c6baea13cd07e108",
+                  "656f611f94b480b8a500c0db",
+                  "656f603f94b480b8a500c0d6",
+                  "656f57dc27aed95beb08f628",
+                  "656f63c027aed95beb08f62c"
+                ],
+                "Plate": "656f603f94b480b8a500c0d6",
+                "armorColliders": [],
+                "armorPlateColliders": [
+                  "Plate_Korund_chest"
+                ],
+                "bluntDamageReduceFromSoftArmor": true,
+                "locked": false
+              }
+            ]
+          },
+          "_proto": "64479fdf9731c8fadc0642c1",
+          "_required": false
+        },
+        {
+          "_id": "68e577eefa327272f1898f3d",
+          "_mergeSlotWithChildren": true,
+          "_name": "Back_plate",
+          "_parent": "68d492870c720da265d03908",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "657b22485f444d6dff0c6c2f",
+                  "657b2797c3dbcb01d60c35ea",
+                  "657b28d25f444d6dff0c6c77"
+                ],
+                "Plate": "657b22485f444d6dff0c6c2f",
+                "armorColliders": [],
+                "armorPlateColliders": [
+                  "Plate_Granit_SAPI_back"
+                ],
+                "bluntDamageReduceFromSoftArmor": true,
+                "locked": false
+              }
+            ]
+          },
+          "_proto": "64479fdf9731c8fadc0642c1",
+          "_required": false
+        },
+        {
+          "_id": "68d49b162c5e7101cd0c15fd",
+          "_mergeSlotWithChildren": true,
+          "_name": "Soft_armor_front",
+          "_parent": "68d492870c720da265d03908",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "65707fc348c7a887f2010432"
+                ],
+                "Plate": "65707fc348c7a887f2010432",
+                "armorColliders": [
+                  "RibcageLow",
+                  "RibcageUp"
+                ],
+                "armorPlateColliders": [],
+                "bluntDamageReduceFromSoftArmor": false,
+                "locked": true
+              }
+            ]
+          },
+          "_proto": "64479fdf9731c8fadc0642c1",
+          "_required": true
+        },
+        {
+          "_id": "68d49b13f040612a008b7d1f",
+          "_mergeSlotWithChildren": true,
+          "_name": "Soft_armor_back",
+          "_parent": "68d492870c720da265d03908",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "6570800612755ae0d907acf8"
+                ],
+                "Plate": "6570800612755ae0d907acf8",
+                "armorColliders": [
+                  "SpineDown",
+                  "SpineTop"
+                ],
+                "armorPlateColliders": [],
+                "bluntDamageReduceFromSoftArmor": false,
+                "locked": true
+              }
+            ]
+          },
+          "_proto": "64479fdf9731c8fadc0642c1",
+          "_required": true
+        },
+        {
+          "_id": "68d49b0f4117abf19bfc018f",
+          "_mergeSlotWithChildren": true,
+          "_name": "Soft_armor_left",
+          "_parent": "68d492870c720da265d03908",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "65708070f65e2491bf00972c"
+                ],
+                "Plate": "65708070f65e2491bf00972c",
+                "armorColliders": [
+                  "LeftSideChestDown"
+                ],
+                "armorPlateColliders": [],
+                "bluntDamageReduceFromSoftArmor": false,
+                "locked": true
+              }
+            ]
+          },
+          "_proto": "64479fdf9731c8fadc0642c1",
+          "_required": true
+        },
+        {
+          "_id": "68d49b0debfc8ce61de192de",
+          "_mergeSlotWithChildren": true,
+          "_name": "soft_armor_right",
+          "_parent": "68d492870c720da265d03908",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "657080a212755ae0d907ad04"
+                ],
+                "Plate": "657080a212755ae0d907ad04",
+                "armorColliders": [
+                  "RightSideChestDown"
+                ],
+                "armorPlateColliders": [],
+                "bluntDamageReduceFromSoftArmor": false,
+                "locked": true
+              }
+            ]
+          },
+          "_proto": "64479fdf9731c8fadc0642c1",
+          "_required": true
+        },
+        {
+          "_id": "68d49b099e3a727821d74847",
+          "_mergeSlotWithChildren": true,
+          "_name": "Collar",
+          "_parent": "68d492870c720da265d03908",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "657080ca12755ae0d907ad5e"
+                ],
+                "Plate": "657080ca12755ae0d907ad5e",
+                "armorColliders": [
+                  "NeckBack",
+                  "NeckFront"
+                ],
+                "armorPlateColliders": [],
+                "bluntDamageReduceFromSoftArmor": false,
+                "locked": true
+              }
+            ]
+          },
+          "_proto": "64479fdf9731c8fadc0642c1",
+          "_required": true
+        },
+        {
+          "_id": "68d49b0678f7de58805104f9",
+          "_mergeSlotWithChildren": true,
+          "_name": "Groin",
+          "_parent": "68d492870c720da265d03908",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "65708122f65e2491bf009755"
+                ],
+                "Plate": "65708122f65e2491bf009755",
+                "armorColliders": [
+                  "Pelvis"
+                ],
+                "armorPlateColliders": [],
+                "bluntDamageReduceFromSoftArmor": false,
+                "locked": true
+              }
+            ]
+          },
+          "_proto": "64479fdf9731c8fadc0642c1",
+          "_required": true
+        },
+        {
+          "_id": "68d49b01e895e1e3a7cfa930",
+          "_mergeSlotWithChildren": true,
+          "_name": "Groin_back",
+          "_parent": "68d492870c720da265d03908",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "65708165696fe382cf073255"
+                ],
+                "Plate": "65708165696fe382cf073255",
+                "armorColliders": [
+                  "PelvisBack"
+                ],
+                "armorPlateColliders": [],
+                "bluntDamageReduceFromSoftArmor": false,
+                "locked": true
+              }
+            ]
+          },
+          "_proto": "64479fdf9731c8fadc0642c1",
+          "_required": true
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "6B23-2 Body Armor (Bamboo)",
+        "shortName": "6B23-2 Bamboo",
+        "description": "The Zabralo-8 main armored vest for personnel of combat units of the ground forces, airborne troops, marines, etc. The vest is designed to protect vital organs from being hit by firearms, shell fragments, mines, grenades, and cold weapons, reducing the severity of armor contusion injury when performing combat missions."
+      }
+    },
+    "addtoInventorySlots": null,
+    "addtoModSlots": false,
+    "modSlot": [],
+    "fleaPriceRoubles": 113846,
+    "handbookPriceRoubles": 2050,
+    "addtoTraders": false,
+    "addtoBots": false,
+    "addtoStaticLootContainers": false,
+    "staticLootContainers": null,
+    "masteries": false,
+    "masterySections": null,
+    "addWeaponPreset": true,
+    "weaponPresets": [
+      {
+        "_changeWeaponName": false,
+        "_encyclopedia": "68d492870c720da265d03908",
+        "_id": "68d492b89bef3e0644eb49bc",
+        "_items": [
+          {
+            "_id": "68d492be53a5662d2aa27b72",
+            "_tpl": "68d492870c720da265d03908"
+          },
+          {
+            "_id": "68e578c2d4c8d4823fe63a14",
+            "_tpl": "656f603f94b480b8a500c0d6",
+            "parentId": "68d492be53a5662d2aa27b72",
+            "slotId": "Front_plate"  
+          },
+          {
+            "_id": "68e578c9005b6ad1ad0a43ee",
+            "_tpl": "657b22485f444d6dff0c6c2f",
+            "parentId": "68d492be53a5662d2aa27b72",
+            "slotId": "Back_plate"  
+          },
+          {
+            "_id": "68d492d94e7e8c733b260ab1",
+            "_tpl": "6572e048371fccfbf909d5d8",
+            "parentId": "68d492be53a5662d2aa27b72",
+            "slotId": "Soft_armor_front"
+          },
+          {
+            "_id": "68d492db06546482a98f5896",
+            "_tpl": "6572e059371fccfbf909d5dc",
+            "parentId": "68d492be53a5662d2aa27b72",
+            "slotId": "Soft_armor_back"
+          },
+          {
+            "_id": "68d492e06cbb842876c96e36",
+            "_tpl": "6572e06219b4b511af012f89",
+            "parentId": "68d492be53a5662d2aa27b72",
+            "slotId": "Soft_armor_left"
+          },
+          {
+            "_id": "68d492e2ff19ec97903f372b",
+            "_tpl": "6572e06819b4b511af012f8d",
+            "parentId": "68d492be53a5662d2aa27b72",
+            "slotId": "soft_armor_right"
+          },
+          {
+            "_id": "68d49fe0c71eddcda6403410",
+            "_tpl": "657080ca12755ae0d907ad5e",
+            "parentId": "68d492be53a5662d2aa27b72",
+            "slotId": "Collar"
+          },
+          {
+            "_id": "68d49fe2cb0b9a0fbeb33b4d",
+            "_tpl": "65708122f65e2491bf009755",
+            "parentId": "68d492be53a5662d2aa27b72",
+            "slotId": "Groin"
+          },
+          {
+            "_id": "68d49fe40766f231eb50443e",
+            "_tpl": "65708165696fe382cf073255",
+            "parentId": "68d492be53a5662d2aa27b72",
+            "slotId": "Groin_back"    
+          }
+        ],
+        "_name": "6B23-2 Body Armor",
+        "_parent": "68d492be53a5662d2aa27b72",
+        "_type": "Preset"  
+      }
+    ]
+  }
+}

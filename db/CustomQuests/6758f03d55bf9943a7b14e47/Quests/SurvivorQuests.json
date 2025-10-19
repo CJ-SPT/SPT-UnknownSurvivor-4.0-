@@ -1,0 +1,150 @@
+{
+  "676385896f9d85d81d974d66": {
+    "QuestName": "676385896f9d85d81d974d66_name",
+    "_id": "676385896f9d85d81d974d66",
+    "traderId": "6758f03d55bf9943a7b14e47",
+    "type": "Elimination",
+    "location": "any",
+    "image": "/files/quest/icon/GainingTrust_quest.png",
+    "instantComplete": false,
+    "isKey": false,
+    "secretQuest": false,
+    "side": "Pmc",
+    "sideExclusive": "Pmc",
+    "description": "676385896f9d85d81d974d66_description",
+    "startedMessageText": "676385896f9d85d81d974d66_started",
+    "successMessageText": "676385896f9d85d81d974d66_success",
+    "failMessageText": "676385896f9d85d81d974d66_fail",
+    "acceptPlayerMessage": "676385896f9d85d81d974d66_accept",
+    "declinePlayerMessage": "676385896f9d85d81d974d66_decline",
+    "completePlayerMessage": "676385896f9d85d81d974d66_complete",
+    "changeQuestMessageText": "676385896f9d85d81d974d66_change",
+    "name": "676385896f9d85d81d974d66_name",
+    "note": "676385896f9d85d81d974d66_note",
+    "restartable": false,
+    "canShowNotificationsInGame": true,
+    "conditions": {
+      "AvailableForStart": [
+        {
+          "id": "67639033b4e03b37007e018f",
+          "index": 0,
+          "parentId": "",
+          "conditionType": "Level",
+          "compareMethod": ">=",
+          "value": 1,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForFinish": [
+        {
+          "id": "676393619e3474a77c9cb870",
+          "index": 0,
+          "parentId": "",
+          "conditionType": "CounterCreator",
+          "type": "Elimination",
+          "value": 3,
+          "completeInSeconds": 0,
+          "dynamicLocale": false,
+          "doNotResetIfCounterCompleted": false,
+          "oneSessionOnly": false,
+          "globalQuestCounterId": "",
+          "visibilityConditions": [],
+          "counter": {
+            "id": "676387b67628063b8ecebbcf",
+            "conditions": [
+              {
+                "id": "67638707486ef2126c949640",
+                "conditionType": "Kills",
+                "target": "Savage",
+                "value": 1,
+                "compareMethod": ">=",
+                "bodyPart": [],
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsInclusive": [],
+                "weaponModsExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyEquipmentExclusive": [],
+                "enemyHealthEffects": [],
+                "savageRole": [],
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "resetOnSessionEnd": false
+              }
+            ]
+          }
+        }
+      ],
+      "Fail": []
+    },
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "6763935ae083108549a15b23",
+          "type": "Experience",
+          "value": 2000,
+          "unknown": false,
+          "gameMode": [],
+          "availableInGameEditions": [],
+          "isHidden": false
+        },
+        {
+          "id": "676392d4e842eaf24b9f1ae8",
+          "type": "TraderStanding",
+          "target": "6758f03d55bf9943a7b14e47",
+          "value": 0.05,
+          "unknown": false,
+          "gameMode": [],
+          "availableInGameEditions": [
+            "unheard_edition"
+          ],
+          "isHidden": false
+        },
+        {
+          "id": "67817d033af6b040a01d4f95",
+          "type": "TraderStanding",
+          "target": "6758f03d55bf9943a7b14e47",
+          "value": 0.15,
+          "unknown": false,
+          "gameMode": [],
+          "availableInGameEditions": [
+            "standard"
+          ],
+          "isHidden": false
+        },
+        {
+          "id": "676392cebc7d64c4641ce044",
+          "type": "Item",
+          "value": 20000,
+          "target": "67663691c69e4da1beb653a2",
+          "items": [
+            {
+              "_id": "67663691c69e4da1beb653a2",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 20000
+              }
+            }
+          ],
+          "isEncoded": false,
+          "unknown": false,
+          "findInRaid": false,
+          "gameMode": [],
+          "availableInGameEditions": [],
+          "isHidden": false
+        }
+      ]
+    }
+  }
+}
