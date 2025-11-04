@@ -14,7 +14,7 @@ using Path = System.IO.Path;
 
 namespace UnknownSurvivor;
 
-[Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
+[Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 2)]
 public class AddTraderWithAssortJson(
     ModHelper modHelper,
     ImageRouter imageRouter,
@@ -29,17 +29,17 @@ public class AddTraderWithAssortJson(
     private readonly TraderConfig _traderConfig = configServer.GetConfig<TraderConfig>();
     private readonly RagfairConfig _ragfairConfig = configServer.GetConfig<RagfairConfig>();
 
-    public Task OnLoad()
+    public async Task OnLoad()
     {
         var pathToMod = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
         bool debugLogging = true;
         
         Assembly assembly = Assembly.GetExecutingAssembly();
 
-        wttCommon.CustomItemServiceExtended.CreateCustomItems(assembly);
-        wttCommon.CustomLootspawnService.CreateCustomLootSpawns(assembly);
-        wttCommon.CustomLocaleService.CreateCustomLocales(assembly);
-        wttCommon.CustomQuestZoneService.CreateCustomQuestZones(assembly);
+        await wttCommon.CustomItemServiceExtended.CreateCustomItems(assembly);
+        await wttCommon.CustomLootspawnService.CreateCustomLootSpawns(assembly);
+        await wttCommon.CustomLocaleService.CreateCustomLocales(assembly);
+        await wttCommon.CustomQuestZoneService.CreateCustomQuestZones(assembly);
         
         var traderImagePath = Path.Combine(pathToMod, "res/unknownsurvivor.jpg");
         var traderBase = modHelper.GetJsonDataFromFile<TraderBase>(pathToMod, "db/base.json");
@@ -52,16 +52,18 @@ public class AddTraderWithAssortJson(
         addCustomTraderHelper.AddTraderWithEmptyAssortToDb(traderBase);
         addCustomTraderHelper.AddTraderToLocales(traderBase, "Survivor", "Ex-Handler...");
          
-        wttCommon.CustomQuestService.CreateCustomQuests(assembly);
+        await wttCommon.CustomQuestService.CreateCustomQuests(assembly);
         
         var assort = modHelper.GetJsonDataFromFile<TraderAssort>(pathToMod, "db/assort.json");
         addCustomTraderHelper.OverwriteTraderAssort(traderBase.Id, assort);
 
         if (debugLogging)
         {
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Survivor is eager to meet you!");
+            Console.ResetColor();
         }
 
-        return Task.CompletedTask;
+        await Task.CompletedTask;
     }
 }
