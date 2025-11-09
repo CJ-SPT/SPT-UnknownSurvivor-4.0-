@@ -38,7 +38,6 @@ public class AddTraderWithAssortJson(
 
         await wttCommon.CustomItemServiceExtended.CreateCustomItems(assembly);
         await wttCommon.CustomLootspawnService.CreateCustomLootSpawns(assembly);
-        await wttCommon.CustomLocaleService.CreateCustomLocales(assembly);
         await wttCommon.CustomQuestZoneService.CreateCustomQuestZones(assembly);
         
         var traderImagePath = Path.Combine(pathToMod, "res/unknownsurvivor.jpg");

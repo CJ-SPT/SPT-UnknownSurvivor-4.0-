@@ -1,13 +1,14 @@
 {
-  "676385896f9d85d81d974d66_name": "Your mom",
-  "676385896f9d85d81d974d66_description": "Eliminate 10 PMC enemies as instructed by the Survivor.",
-  "676385896f9d85d81d974d66_note": "This is a note for the quest.",
-  "676385896f9d85d81d974d66_started": "The Survivor has a task for you.",
-  "676385896f9d85d81d974d66_success": "Quest complete. Well done!",
-  "676385896f9d85d81d974d66_fail": "You failed the task.",
-  "676385896f9d85d81d974d66_accept": "I accept the quest.",
-  "676385896f9d85d81d974d66_decline": "I decline.",
-  "676385896f9d85d81d974d66_complete": "You finished the quest.",
-  "676385896f9d85d81d974d66_change": "The Survivor has updated the quest.",
-  "676393619e3474a77c9cb870": "Visit the location."
+  "676385896f9d85d81d974d66_name": "Prove Your Worth - Part 1",
+  "676385896f9d85d81d974d66_description": "Hello soldier. You are probably wondering who I am, but for right now I am going to simply call myself 'Survivor'. Of course we need to get to know each other before there is a more formal introduction. \nI need to make sure you can be trusted and follow directions. \nI need you to go track down some medical supplies at Ground Zero and mark them for extraction. Do this and I will give you a little something to help you out while you are trying to Survive Tarkov.",
+  "676385896f9d85d81d974d66_started": "I hope that you can be trusted. Fence didn't have much to say about you so I guess I need to figure out the type of person you are.",
+  "676385896f9d85d81d974d66_success": "Excellent work. Lets only hope you can stay consistent.",
+  "676393619e3474a77c9cb870": "Mark the medical supplies inside the tent near the Emercom Extract.",
+
+  "690aa2e086ff34f94544b2a8_name": "Prove Your Worth - Part 2",
+  "690aa2e086ff34f94544b2a8_description": "Hello soldier. You seem to be able to follow orders well. \nHowever, I need to make sure you can handle yourself once the sun goes down.",
+  "690aa2e086ff34f94544b2a8_started": "Go back to Ground Zero once it's dark and kill some PMC's. Prove to me that you can still follow orders and know how to handle gun fights when things go dark.",
+  "690aa2e086ff34f94544b2a8_success": "I am liking what I am seeing so far! Soon you'll be ready to really see what I am all about.",
+  "690aa73f55b593e91caf06cb": "Kill 5 PMC's on Ground Zero between 20:00 and 5:00"
 }
+
