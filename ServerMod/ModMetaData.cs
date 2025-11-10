@@ -10,10 +10,10 @@ public record ModMetadata : AbstractModMetadata
     public override string Name { get; init; } = "Unknown Survivor";
     public override string Author { get; init; } = "Dsnyder";
     public override List<string>? Contributors { get; init; } = ["Dsnyder"];
-    public override SemanticVersioning.Version Version { get; init; } = new("2.0.0");
-    public override SemanticVersioning.Range SptVersion { get; init; } = new("~4.0.0");
+    public override Version Version { get; init; } = new("2.0.0");
+    public override Range SptVersion { get; init; } = new("~4.0.0");
     public override List<string>? Incompatibilities { get; init; } = [""];
-    public override Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; } = new()
+    public override Dictionary<string, Range>? ModDependencies { get; init; } = new()
     {
         { "com.wtt.commonlib", new Range("~2.0.0") }
     };

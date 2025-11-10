@@ -4,14 +4,15 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>UnknownSurvivor</RootNamespace>
+        <AssemblyName>UnknownSurvivorServerMod</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="SPTarkov.Common" Version="4.0.3" />
-        <PackageReference Include="SPTarkov.DI" Version="4.0.3" />
-        <PackageReference Include="SPTarkov.Server.Core" Version="4.0.3" />
-        <PackageReference Include="WTT-ServerCommonLib" Version="2.0.0" />
+      <PackageReference Include="SPTarkov.Server.Core" Version="4.0.4" />
+      <PackageReference Include="WTT-ServerCommonLib" Version="2.0.0" />
     </ItemGroup>
+
     <PropertyGroup>
         <TarkovDir Condition=" '$(TarkovDir)' == '' ">$(SolutionDir)..\..\</TarkovDir>
         <ServerModDir>$(TarkovDir)SPT\user\mods\</ServerModDir>
@@ -30,4 +31,5 @@
                 DestinationFolder="$(ServerModDir)UnknownSurvivor\%(RecursiveDir)"
         />
     </Target>
+    
 </Project>
